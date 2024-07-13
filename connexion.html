@@ -7687,15 +7687,37 @@
                                         </div>
                                     </div>
 
-                                <form action="connexion.php" method="post">
-                                    <label for="email">Email :</label> 
-                                    <input type="email" name="email" id="email" required> <br> <br> 
-                                     <label for="password">Mot de passe :</label> 
-                                     <input type="password" name="password" id="password" required><br> <br> 
-                                     <div class="sc-bdVaJa eRshRt">
-                                        <input type="submit" value="Se connecter" style="background-color: transparent; color: rgb(255, 255, 255); border: 1px solid transparent;">
-                                    </div>
-                                </form>
+                                    <?php
+                                    if (isset($_SESSION['error_message'])) {
+                                        echo "<p style='color:red;'>" . $_SESSION['error_message'] . "</p>";
+                                        unset($_SESSION['error_message']);
+                                    }
+                                    ?>
+                            
+    <?php
+    session_start();
+    if (isset($_SESSION['error_message'])) {
+        echo "<p style='color:red;'>" . $_SESSION['error_message'] . "</p>";
+        unset($_SESSION['error_message']);
+    }
+    ?>
+                                    <form action="connexion.php" method="post">
+                                        <label for="prenom">Prénom :</label> 
+                                        <input type="text" name="prenom" id="prenom" required> <br> <br> 
+                                
+                                        <label for="nom">Nom :</label> 
+                                        <input type="text" name="nom" id="nom" required> <br> <br> 
+                                
+                                        <label for="email">Email :</label> 
+                                        <input type="email" name="email" id="email" required> <br> <br> 
+                                
+                                        <label for="password">Mot de passe :</label> 
+                                        <input type="password" name="password" id="password" required><br> <br> 
+                                
+                                        <div class="sc-bdVaJa eRshRt">
+                                            <input type="submit" value="Se connecter" style="background-color: transparent; color: rgb(255, 255, 255); border: 1px solid transparent;">
+                                        </div>
+                                    </form>
 
                                      <br> 
 

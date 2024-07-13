@@ -7422,6 +7422,24 @@
 
     
     <body>
+<!--
+         <?php
+    session_start();
+    if (isset($_SESSION['error_message'])) {
+        echo "<p style='color:red;'>" . $_SESSION['error_message'] . "</p>";
+        unset($_SESSION['error_message']);
+    }
+    ?>
+
+    <form action="connexion.php" method="post">
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email" required><br><br>
+
+        <label for="password">Mot de passe :</label>
+        <input type="password" name="password" id="password" required><br><br>
+
+        <input type="submit" value="Se connecter">
+    </form> --> 
 
         
         
@@ -7475,23 +7493,30 @@
                                                     </div>--> 
 
                                                     <!--Menu -->
-                                                    <div size="5" class="sc-fONwsr dDfCoV">
-                                                        <div class="sc-cNQqM hncEpl">
-                                                            <div id="menu-33a050db" class="sc-jAaTju ePNNtu">
-                                                                <a href="#section-00c50639" color="rgba(182, 188, 208, 1)" font-size="16" class="sc-cMljjf iBCLVr" span style="color: rgb(238, 87, 5)"> Contenu</a> 
-                                                                <a href="#section-5cd66a97" target="_self" color="rgba(182, 188, 208, 1)" font-size="16" class="sc-cMljjf iBCLVr" span style="color: rgb(238, 87, 5)">Déroulement</a>
-                                                                <div class="sc-brqgnP iAXrnv"></div>
-                                                                <a href="#section-5cd66a97" target="_self" color="rgba(182, 188, 208, 1)" font-size="16" class="sc-cMljjf iBCLVr" span style="color: rgb(238, 87, 5)"> Réseaux </a>
-                                                                <div class="sc-brqgnP iAXrnv"></div>
-                                                              
-                                                                <a href="connexion.html" color="rgba(182, 188, 208, 1)" font-size="16" class="sc-cMljjf iBCLVr" span style="color: rgb(238, 87, 5)"> Connexion </a></span> <br>
-                                                                <div class="sc-brqgnP iAXrnv"></div>
 
-                                                                <a href="inscription.html" color="rgba(182, 188, 208, 1)" font-size="16" class="sc-cMljjf iBCLVr" span style="color: rgb(238, 87, 5)"> Inscription </a></span> <br>
-                                                                <div class="sc-brqgnP iAXrnv"></div>
+                                                    
 
-                                                                <a href="#section-abfc2681" target="_self" color="rgba(182, 188, 208, 1)" font-size="16" class="sc-cMljjf iBCLVr" span style="color: rgb(238, 87, 5)">Qui suis-je </a>                                                           
-                                                             </div>
+                                                    <div size="5" class="menu-container">
+                                                        <div class="menu-container">
+                                                            <div class="menu-item">
+                                                                <a href="index.html">Accueil</a>
+                                                            </div>
+                                                            <div class="menu-item">
+                                                                <a href="offres.html">Offres</a>
+                                                            </div>
+                                                            <div class="menu-item">
+                                                                <a href="challenge.html">Challenge du moment</a>
+                                                            </div>
+                                                            <div class="menu-item">
+                                                                <a href="#section-5cd66a97">Boutique</a>
+                                                            </div>
+                                                            <div class="menu-item">
+                                                                <a href="https://www.nolio.io/login/" class="cta-button"> NOLIO 🏃🏻‍♂️‍➡️</a>
+                                                            </div>
+                                                        </div>
+
+                                                             <div class="sc-cNQqM hncEpl">
+
 
                                                                 
                                                             <div class="sc-gPEVay knNsWy">
@@ -7526,13 +7551,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div size="2" class="sc-fONwsr edVlzv">
-                                                        <div class="sc-cNQqM fNpNmg">
-                                                            <a id="button-b2463688" font-family="Inter" href="https://www.nolio.io/login/" class="sc-bdVaJa eRshRt"> <!-- href="https://go.runz.fr/bdc-challenge" -->
-                                                                <div class="sc-bwzfXH eqoTOr"> RDV sur Nolio 🏃🏻‍♂️‍➡️</div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
+                                                    
                                                 </div>
                                             </div>
                                             <div class="sc-eqPNPO hevNpC">
@@ -7586,7 +7605,7 @@
                                                                 <div class="sc-brqgnP eCUVOE"></div> <br> 
                                                                 <a href="#section-5cd66a97" color="rgba(182, 188, 208, 1)" font-size="16" class="sc-cMljjf eLgjYH">Déroulement</a>
                                                                 <div class="sc-brqgnP eCUVOE"></div>
-                                                                <a href="#section-5cd66a97" color="rgba(182, 188, 208, 1)" font-size="16" class="sc-cMljjf eLgjYH"> Réseaux </a>
+                                                                <a href="#section-5cd66a97" color="rgba(182, 188, 208, 1)" font-size="16" class="sc-cMljjf eLgjYH"> Boutique </a>
                                                                 <div class="sc-brqgnP eCUVOE"></div>
                                                                 <a href="#section-abfc2681" color="rgba(182, 188, 208, 1)" font-size="16" class="sc-cMljjf eLgjYH"> Qui suis-je</a>
                                                             </div>
@@ -7660,7 +7679,7 @@
                                     <div class="sc-bdVaJa eRshRt">
 
                                         <div class="sc-eqPNPO ejevlJ">
-                                        TEMPS RESTANT AVANT LE RUNNING LYON  <br> <br> 
+                                       <p align ="center"> RUNNING LYON </p> <br> <br> 
 
                                             <br> <div id="countdown-dfd790a1" class="sc-dEoRIm bfChLb"> 
                                                 
@@ -7704,28 +7723,21 @@
                                     <div style="background-size:initial;background-position:50% 50%;background-repeat:repeat;background-attachment:initial" id="row-baf080a4" class="sc-hUfwpO gPBHtU">
                                         
                                         <div size="6" class="sc-fONwsr gYJwkZ">
-                                            <div class="sc-eqPNPO eynRqB">
-                                                <div class="sc-hjRWVT brnrNU">
-                                                    <picture class="sc-iybRtq kLaVss">
-                                                        <img id="Logo_police_orange_horizontal.png" src = "Logo_police_orange_horizontal.png" width="400" loading="lazy"/>
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                            
+                                           
 
                                             <div class="sc-cNQqM jAdPBU">   
-                                                <div id="text-57d1d1db" font-size="15" font-family="Poppins" color="rgba(182, 188, 208, 1)" font-style="normal" font-weight="900" letter-spacing="1" class="sc-rBLzX jvjJgm">
+                                                <div id="text-57d1d1db" font-size="15" font-family="Poppins" color="rgba(182, 188, 208, 1)" font-style="normal" font-weight="900" letter-spacing="1" class="sc-rBLzX ehYDzE">
                                                     <div>
                                                         <p dir="ltr">
-                                                            <span style="color: rgb(238, 87, 5)">CHALLENGE - COURSE À PIED - 28 JOURS</span>
+                                                            <span style="color: rgb(238, 87, 5)"> Matthieu Training </span>
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="sc-eqPNPO fuoCAj">
+                                           <!-- <div class="sc-eqPNPO fuoCAj">
                                                 <div id="headline-58c78ecb" font-size="40" color="rgba(255, 255, 255, 1)" font-family="Poppins" font-style="normal" font-weight="800" class="sc-rBLzX ehYDzE">
                                                     <p dir="ltr">
-                                                        <span style="color: rgba(0, 0, 0, 1)">Le 1er challenge de running </span>
+                                                        <span style="color: rgba(0, 0, 0, 1)"> Le 1er challenge de running </span>
                                                         <span style="color: rgba(0, 0, 0, 1)">
                                                             <u> personnalisé </u>
                                                         </span> 
@@ -7734,12 +7746,13 @@
                                                         <span style="color: rgba(0, 0, 0, 1)">&amp;communautaire 🇫🇷</span>
                                                     </p>
                                                 </div> 
-                                            </div> 
+                                            </div>  --> 
                                             <div class="sc-cNQqM fhyhTt">
                                                 <div id="text-10def18c" font-size="15" font-family="Poppins" color="rgba(182, 188, 208, 1)" class="sc-rBLzX jqVqKJ">
                                                     <div>
                                                         <p dir="ltr">
-                                                            <span style="color: rgba(74, 74, 74, 1)">Rejoins notre challenge de 28 jours et démarre en même temps que tous les autres Runnerz : apprends à bien courir, sans être essoufflé, à prendre du plaisir dans tes entraînements, et améliore ta vitesse grâce à un programme 100% personnalisé, et une communauté soudée et motivante.</span>
+                                                            <span style="color: rgba(74, 74, 74, 1)" align="justify"> J'aide les coureurs, et plus particulièrement les traineurs, à passer d'un entrainement flou, fait au feeling, sans connaissances ni suivi, vers un plan d'entrainement définit, précis et personnalisé, afin de leur éviter des blessures ainsi qu' surentrainement personnalisé et suivi en fonction de vos objectifs. <br> <br>
+                                                                </span>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -7749,7 +7762,15 @@
                                             <div class="sc-cNQqM dxtEKg">
                                                 <a id="button-e5bbde57" href="#section-00c50639" rel="" class="sc-bdVaJa jEmNNG">
                                                     <div class="sc-bwzfXH eqoTOr">  
-                                                        Découvrir le challenge <i class="sc-htpNat fkXTIP fas fa-arrow-alt-circle-down"></i>
+                                                        Rejoindre le challenge run in LYON 🏃🏻‍♂️‍➡️<i class="sc-htpNat fkXTIP fas fa-arrow-alt-circle-down"></i>
+                                                    </div>
+                                                </a>
+                                            </div> 
+
+                                            <div class="sc-cNQqM dxtEKg">
+                                                <a id="button-e5bbde57" href="#section-00c50639" rel="" class="sc-bdVaJa jEmNNG">
+                                                    <div class="sc-bwzfXH eqoTOr">  
+                                                        Suivi personnalisé premium     🏅 <i class="sc-htpNat fkXTIP fas fa-arrow-alt-circle-down"></i>
                                                     </div>
                                                 </a>
                                             </div> 
@@ -7781,8 +7802,9 @@
                         
                         </section>
                     </div>
-
+<div>
                     <div class="sc-cNQqM eCmmyf">
+                        
                         <section id="section-5cd66a97" class="sc-iiUIRa hpsdZj">
                             <div width="wide" class="sc-eLdqWK NtIXI">
                                 <div class="sc-eqPNPO gRarNe">
@@ -7793,6 +7815,9 @@
                                                     <!-- Comment ça marche ? -->
                                                     <p dir="ltr"> 
                                                         <span style="color: rgba(238, 87, 5)">
+                                                            <em> CHALLENGE DU MOMENT : <br> RUN IN LYON </em>
+                                                        </span>
+                                                       <!-- <span style="color: rgba(238, 87, 5)">
                                                             <em>COMMENT</em>
                                                         </span>
                                                     </p>
@@ -7833,16 +7858,47 @@
                                                             <em>🏃🏻‍♂️‍➡️</em>
                                                         </span>
                                                     </p>
-                                                </div>
+                                                </div> --> 
+                                                </p>
+
                                             </div>
+
+                                            </div>   
+                                               <span style="color: rgba(0, 0, 0, 1)"> <br> Tu rêves de participer au Run In Lyon le 6 octobre prochain ?
+                                               <br>  Que tu vises le 5 km, le 10 km, le semi-marathon ou même le marathon, ce challenge est
+                                                fait pour toi ! Fini les entraînements flous et non structurés !
+                                                <br> Ensemble, nous allons passer à un plan d'entraînement défini, personnalisé et suivi en
+                                                fonction de tes objectifs précis.
+                                               <br> <br>  Pourquoi nous rejoindre ?
+                                                <br> Préparation ciblée : Que tu sois débutant ou expérimenté, j’adapte les séances à ton
+                                                niveau et à tes objectifs.
+                                               
+                                               <br> <br>  REJOINS LE CHALLENGE
+                                                RUN IN LYON
+                                                
+                                                SUIVI PERSONNALISE
+                                                PREMIUM
+                                                
+                                                Suivi professionnel : Bénéficie de mon expertise pour éviter les blessures, améliorer tes
+                                                performances et éviter le surentraînement.
+                                                
+                                                
+                                                <br> <br> Convivialité : Manque de motivation et marre de t’entrainer seul ? rejoins la communauté
+                                                et créons une team pour tous ENSEMBLE réalisé nos objectifs !
+                                               <br>  Ne rate pas cette opportunité de t'entraîner dans une ambiance motivante et dynamique.
+                                               <br> <br> Rejoins-nous et prépare-toi au mieux pour le Run In Lyon ! </span>
+
                                         </div>
                                     </div>
+                                    
                                 </div>
+
+                            
                                 <div class="sc-eqPNPO fkKVIT">
                                     <div style="background-size:initial;background-position:50% 50%;background-repeat:repeat;background-attachment:initial" id="row-b413a432" class="sc-hUfwpO zhHqK">
                                         <div size="12" class="sc-fONwsr fqYvJU">
                                             <div class="sc-eqPNPO ifbDUV">
-                                                <div style="background-size:initial;background-position:50% 50%;background-repeat:repeat;background-attachment:initial" id="row-7b900e55" class="sc-hUfwpO iCKIBP">
+                                              <!--  <div style="background-size:initial;background-position:50% 50%;background-repeat:repeat;background-attachment:initial" id="row-7b900e55" class="sc-hUfwpO iCKIBP">
                                                     <div size="3" class="sc-fONwsr kdUgrg">
                                                         <div class="sc-eqPNPO ifbDUV">
                                                             <div style="background-size:initial;background-position:50% 100%;background-repeat:no-repeat;background-attachment:initial" id="row-c9d4f930" class="sc-hUfwpO dJSPeU">
@@ -8001,7 +8057,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> --> 
 
 
                                                 <!--pointillés -->
@@ -8013,7 +8069,7 @@
                                                                     <div class="sc-cNQqM fLsRBP">
                                                                         <div id="text-1ca3ece7" font-size="51" font-family="Poppins" color="rgba(182, 188, 208, 1)" font-style="normal" font-weight="800" class="sc-rBLzX jwMhoI">
                                                                             <div>
-                                                                                <p> Abonnements <!--CHALLENGE et image-f39880fd -->
+                                                                                <p> Que vas-tu trouver  dans ce challenge ? </p> <!--CHALLENGE et image-f39880fd -->
                                                                                     <span style="color: rgba(67, 53, 141, 1)"><!-- CHALLENGE--> </span>
                                                                                 </p>
                                                                             </div>
@@ -8025,7 +8081,23 @@
                                                                             <picture class="sc-iybRtq kLaVss">
                                                                                <!-- <img id="image-f39880fd" src="https://d1yei2z3i6k35z.cloudfront.net/936891/667b4b51e40b8_logo-test-12.png" width="468" loading="lazy" class="sc-jrIrqw lkVHfh"/> --> 
                                                                            
-                                                                           <p> <br> test  test test </p>
+                                                                           <p> <br> • Un programme en fonction de tes disponibilités et de tes objectifs. Le tout sur une
+                                                                            application utilisés par les plus grand athlètes !
+                                                                            <br> 
+                                                                            • Mise en place d’un éco système avec une méthode unique, des conseils et des
+                                                                            experts à ta disposition : <br> 
+                                                                            o Conférence toutes les semaines, formation vidéo (bibliothèque de vidéo
+                                                                            qui va grandir au fur et à mesure). Master class exclusive pour ceux suivant
+                                                                            le challenge. <br> 
+                                                                            o Réponse à des questions fréquentes sur l’entrainement. <br>
+                                                                            o Apporter des connaissances utiles pour tes entrainements.<br>
+                                                                            o Apporter des conseils et des astuces pour encore plus de résultats<br>
+                                                                            o Sessions questions réponses organisé toutes les deux semaines par visio<br>
+                                                                            o A partir de septembre, mise en place de séance de groupe en présentiel
+                                                                            une fois par semaine adapté à chacun.<br>
+                                                                            o Création d’une communauté forte : Groupe whats app pour favoriser les
+                                                                            échanges entre les participants (Partage d’expérience et résultat pour
+                                                                            célébrer tous ensemble nos succès).</p>
                                                                          </picture>
                                                                         </div>
                                                                     </div> 
@@ -8034,7 +8106,7 @@
                                                 <div class="sc-cNQqM byjiIs">
                                                     <a id="button-6d9a70f3" font-family="Inter" href="https://go.runz.fr/bdc-challenge" class="sc-bdVaJa cHIcJe">
                                                         <div class="sc-bwzfXH eqoTOr">
-                                                            Rejoindre dynamique step <i class="sc-htpNat fkXTIP fas fa-arrow-alt-circle-right"></i>
+                                                            Participer au challenge Run In Lyon  <i class="sc-htpNat fkXTIP fas fa-arrow-alt-circle-right"></i>
                                                         </div>
                                                     </a>
 
@@ -8045,7 +8117,7 @@
                                     </div>
                                 </div>
                                 <div class="sc-eqPNPO dZALqI">
-                                    <div style="background-size:initial;background-position:50% 50%;background-repeat:repeat;background-attachment:initial" id="row-7e5e6221" class="sc-hUfwpO dacuok">
+                                    <!-- <div style="background-size:initial;background-position:50% 50%;background-repeat:repeat;background-attachment:initial" id="row-7e5e6221" class="sc-hUfwpO dacuok">
                                         <div size="6" class="sc-fONwsr dFaoBd">
                                             <div class="sc-eqPNPO edJgWG">
                                                 <div style="background-size:initial;background-position:50% 100%;background-repeat:no-repeat;background-attachment:initial" id="row-f81f72cb" class="sc-hUfwpO cArVSy">
@@ -8128,9 +8200,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --> 
                                 </div>
-                                <div class="sc-eqPNPO imkVvL">
+                               <!-- <div class="sc-eqPNPO imkVvL">
                                     <div style="background-size:initial;background-position:50% 50%;background-repeat:repeat;background-attachment:initial" id="row-3436fcfe" class="sc-hUfwpO dacuok">
                                         <div size="6" class="sc-fONwsr dFaoBd">
                                             <div class="sc-eqPNPO edJgWG">
@@ -8212,11 +8284,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --> 
                             </div>
                         </section>
                     </div>
-                    <div class="sc-cNQqM EXfIj">
+                    <!--<div class="sc-cNQqM EXfIj">
                         <section id="section-98f1a0ad" class="sc-iiUIRa cOJJKg">
                             <div width="wide" class="sc-eLdqWK NtIXI">
                                 <div class="sc-eqPNPO ZqAns">
@@ -8401,304 +8473,9 @@
                                 </div>
                             </div>
                         </section>
-                    </div>
-                    <div class="sc-cNQqM fcINWk">
-                        <section id="section-00c50639" class="sc-iiUIRa braDdH">
-                            <div width="wide" class="sc-eLdqWK NtIXI">
-                                <div class="sc-eqPNPO bnRnux">
-                                    <div id="headline-396ed603" font-size="58" color="rgba(255, 255, 255, 1)" font-family="Poppins" font-style="normal" font-weight="800" letter-spacing="-2" class="sc-rBLzX exUXdi">
-                                        <p dir="ltr">
-                                            <span style="color: rgba(0, 0, 0, 1)">PLATEFORME DÉDIÉE,</span>
-                                        </p>
-                                        <p dir="ltr">
-                                            <span style="color: rgba(0, 0, 0, 1)">AVEC COMMUNAUTÉ</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="sc-eqPNPO ifbDUV">
-                                    <div style="background-size:initial;background-position:50% 50%;background-repeat:repeat;background-attachment:initial" id="row-e74df378" class="sc-hUfwpO eWjzbc">
-                                        <div size="12" class="sc-fONwsr fqYvJU">
-                                            <div class="sc-eqPNPO bEqsqf">
-                                                <div style="background-size:initial;background-position:50% 50%;background-repeat:repeat;background-attachment:initial" id="row-bac1f62c" class="sc-hUfwpO jNdfUZ">
-                                                    <div size="7" class="sc-fONwsr dVWQfc">
-                                                        <div class="sc-eqPNPO gRPSwB">
-                                                            <div class="sc-hjRWVT iDwetz">
-                                                                <picture class="sc-iybRtq dETaAX">
-                                                                    <img id="image-a8fb0bec" src="https://d1yei2z3i6k35z.cloudfront.net/936891/667b5c07b1eb1_14.png" width="584" loading="lazy" class="sc-jrIrqw fogjlR"/>
-                                                                </picture>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div size="5" class="sc-fONwsr kNtBjX">
-                                                        <div class="sc-eqPNPO SPpxC">
-                                                            <div id="headline-657ea352" font-size="32" color="rgba(255, 255, 255, 1)" font-family="Poppins" font-style="normal" font-weight="700" class="sc-rBLzX leZdPT">
-                                                                <p dir="ltr">
-                                                                    <span style="color: rgba(29, 29, 29, 1)">Simple, accessible,</span>
-                                                                </p>
-                                                                <p dir="ltr">
-                                                                    <span style="color: rgba(29, 29, 29, 1)">et ultra complet</span>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="sc-cNQqM kLXRjE">
-                                                            <div font-size="20px" id="bullet-list-80f21fc7" class="sc-jWxkHr aXoOu">
-                                                                <div>
-                                                                    <ul>
-                                                                        <li>
-                                                                            <i class="fad fa-chevron-double-right" style="font-size:20px; 
-  color:rgba(238, 87, 5); margin-left: -25px; margin-right: 10px;"></i>
-                                                                            <span>
-                                                                                <span style="color: rgba(29, 29, 29, 1)">
-                                                                                    <strong>Plateforme</strong>
-                                                                                </span>
-                                                                                <span style="color: rgba(29, 29, 29, 1)"></span>
-                                                                                <span style="color: rgba(29, 29, 29, 1)">
-                                                                                    <strong>interactive</strong>
-                                                                                </span>
-                                                                            </span>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i class="fad fa-chevron-double-right" style="font-size:20px; 
-  color:rgba(238, 87, 5); margin-left: -25px; margin-right: 10px;"></i>
-                                                                            <span>
-                                                                                <span style="color: rgba(29, 29, 29, 1)">
-                                                                                    <strong>Communauté</strong>
-                                                                                </span>
-                                                                                <span style="color: rgba(29, 29, 29, 1)">motivante</span>
-                                                                            </span>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i class="fad fa-chevron-double-right" style="font-size:20px; 
-  color:rgba(238, 87, 5); margin-left: -25px; margin-right: 10px;"></i>
-                                                                            <span>
-                                                                                <span style="color: rgba(29, 29, 29, 1)">
-                                                                                    <strong>Évènements</strong>
-                                                                                </span>
-                                                                                <span style="color: rgba(29, 29, 29, 1)"></span>
-                                                                                <span style="color: rgba(29, 29, 29, 1)">
-                                                                                    <strong>&amp;</strong>
-                                                                                </span>
-                                                                                <span style="color: rgba(29, 29, 29, 1)"></span>
-                                                                                <span style="color: rgba(29, 29, 29, 1)">
-                                                                                    <strong>courses</strong>
-                                                                                </span>
-                                                                            </span>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i class="fad fa-chevron-double-right" style="font-size:20px; 
-  color:rgba(238, 87, 5); margin-left: -25px; margin-right: 10px;"></i>
-                                                                            <span>
-                                                                                <span style="color: rgba(29, 29, 29, 1)">
-                                                                                    <strong>Vidéos explicatives </strong>
-                                                                                </span>
-                                                                                <span style="color: rgba(29, 29, 29, 1)">détaillées</span>
-                                                                            </span>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i class="fad fa-chevron-double-right" style="font-size:20px; 
-  color:rgba(238, 87, 5); margin-left: -25px; margin-right: 10px;"></i>
-                                                                            <span>
-                                                                                <span style="color: rgba(29, 29, 29, 1)">Support et </span>
-                                                                                <span style="color: rgba(29, 29, 29, 1)">
-                                                                                    <strong>motivation</strong>
-                                                                                </span>
-                                                                            </span>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i class="fad fa-chevron-double-right" style="font-size:20px; 
-  color:rgba(238, 87, 5); margin-left: -25px; margin-right: 10px;"></i>
-                                                                            <span>
-                                                                                <span style="color: rgba(29, 29, 29, 1)">On avance </span>
-                                                                                <span style="color: rgba(29, 29, 29, 1)">
-                                                                                    <strong>tous ensemble</strong>
-                                                                                </span>
-                                                                            </span>
-                                                                        </li>
-                                                                        <li>
-                                                                            <i class="fad fa-chevron-double-right" style="font-size:20px; 
-  color:rgba(238, 87, 5); margin-left: -25px; margin-right: 10px;"></i>
-                                                                            <span>
-                                                                                <span style="color: rgba(29, 29, 29, 1)">Dispo sur </span>
-                                                                                <span style="color: rgba(29, 29, 29, 1)">
-                                                                                    <strong>tous tes appareils</strong>
-                                                                                </span>
-                                                                            </span>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sc-eqPNPO bpmFJQ">
-                                    <div style="background-size:initial;background-position:50% 50%;background-repeat:repeat;background-attachment:initial" id="row-b96d9dba" class="sc-hUfwpO fRGqJn">
-                                        <div size="12" class="sc-fONwsr fqYvJU">
-                                            <div class="sc-eqPNPO ifbDUV">
-                                                <div id="headline-56266c25" font-size="16" color="rgba(255, 255, 255, 1)" font-family="Poppins" font-style="normal" font-weight="400" class="sc-rBLzX iBsLwA">
-                                                    <p dir="ltr">
-                                                        <span style="color: rgba(62, 62, 62, 1)">
-                                                            <u>
-                                                                <strong>Quelques sujets qu'on va aborder :</strong>
-                                                            </u>
-                                                        </span>
-                                                      <!--  <span style="color: rgba(62, 62, 62, 1)">déroulement des 28 jours, concepts essentiels, les termes de base à connaître, comment planifier ses entraînements pour progresser sans se blesser, bien choisir ses chaussures et vêtements, que faire avant, pendant et après ton entraînement, l'endurance fondamentale de A à Z, les allures libres, les intervalles, bien gérer son hydratation, bien gérer ses échauffements pour ne plus jamais avoir les jambes lourdes, étirements anti-courbatures...</span> -->
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sc-eqPNPO kWMmiC">
-                                    <div id="headline-01b00fad" font-size="58" color="rgba(255, 255, 255, 1)" font-family="Poppins" font-style="normal" font-weight="800" letter-spacing="-2" class="sc-rBLzX exUXdi">
-                                        <p dir="ltr">
-                                            <span style="color: rgba(238, 87, 5)"> Dynamique Step sur les réseaux </span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="sc-eqPNPO kCUOIG">
-                                    <div style="background-size:initial;background-position:50% 50%;background-repeat:repeat;background-attachment:initial" id="row-c93e6d63" class="sc-hUfwpO bekXIy">
-                                        <div size="6" class="sc-fONwsr gYJwkZ">
-                                            <div class="sc-eqPNPO gRPSwB">
-                                                <div class="sc-hjRWVT iDwetz">
-                                                    <picture class="sc-iybRtq jgSkXO">
-                                                        <img id="youtube.png" src="youtube.png" width="595" loading="lazy" class="sc-jrIrqw XZoAR"/>
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div size="6" class="sc-fONwsr kqTGZD">
-                                            <div class="sc-eqPNPO ixczXS">
-                                                <div id="headline-cd28fe6a" font-size="32" color="rgba(255, 255, 255, 1)" font-family="Poppins" font-style="normal" font-weight="700" class="sc-rBLzX leZdPT">
-                                                    <p dir="ltr">
-                                                        <span style="color: rgba(29, 29, 29, 1)"> 1 Podcast par semaine disponible sur youtube </href> et Spotify</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="sc-eqPNPO dTSJza">
-                                                <div id="headline-41922149" font-size="32" color="rgba(255, 255, 255, 1)" font-family="Poppins" font-style="normal" font-weight="700" class="sc-rBLzX leZdPT">
-                                                    <p dir="ltr">
-                                                        <span style="color: rgba(29, 29, 29, 1)"> 1 Live par semaine,</span>
-                                                    </p>
-                                                    <p dir="ltr">
-                                                        <span style="color: rgba(29, 29, 29, 1)"> disponible en Replay</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="sc-cNQqM kLXRjE">
-                                                <div font-size="20px" id="bullet-list-a8927b2f" class="sc-jWxkHr aXoOu">
-                                                    <div>
-                                                        <ul>
-                                                            <li>
-                                                                <i class="fad fa-chevron-double-right" style="font-size:20px; 
-  color:rgba(238, 87, 5); margin-left: -25px; margin-right: 10px;"></i>
-                                                                <span>
-                                                                    <span style="color: rgba(29, 29, 29, 1)">  Interview inspirantes </span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fad fa-chevron-double-right" style="font-size:20px; 
-  color:rgba(238, 87, 5); margin-left: -25px; margin-right: 10px;"></i>
-                                                                <span>
-                                                                    <span style="color: rgba(29, 29, 29, 1)"> <!-- Bien courir en --> </span>
-                                                                    <span style="color: rgba(29, 29, 29, 1)">
-                                                                        <strong> <!-- endurance --> </strong>
-                                                                    </span>
-                                                                    <span style="color: rgba(29, 29, 29, 1)"></span>
-                                                                    <span style="color: rgba(29, 29, 29, 1)">
-                                                                        <strong> <!-- fondamentale --> </strong>
-                                                                    </span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fad fa-chevron-double-right" style="font-size:20px; 
-  color:rgba(238, 87, 5); margin-left: -25px; margin-right: 10px;"></i>
-                                                                <span>
-                                                                    <span style="color: rgba(29, 29, 29, 1)"> <!-- Bien courir ses -->  </span>
-                                                                    <span style="color: rgba(29, 29, 29, 1)">
-                                                                        <strong><!-- séances --> </strong>
-                                                                    </span>
-                                                                    <span style="color: rgba(29, 29, 29, 1)"></span>
-                                                                    <span style="color: rgba(29, 29, 29, 1)">
-                                                                        <strong><!-- d’intervalles --> </strong>
-                                                                    </span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fad fa-chevron-double-right" style="font-size:20px; 
-  color:rgba(238, 87, 5); margin-left: -25px; margin-right: 10px;"></i>
-                                                                <span>
-                                                                    <span style="color: rgba(29, 29, 29, 1)"> <!--Comment progresser et -->  </span>
-                                                                    <span style="color: rgba(29, 29, 29, 1)">
-                                                                        <strong><!-- gagner en allure --> </strong>
-                                                                    </span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <i class="fad fa-chevron-double-right" style="font-size:20px; 
-  color:rgba(238, 87, 5); margin-left: -25px; margin-right: 10px;"></i>
-                                                                <span>
-                                                                    <span style="color: rgba(29, 29, 29, 1)">
-                                                                        <strong> <!-- Bilan --> </strong>
-                                                                    </span>
-                                                                    <span style="color: rgba(29, 29, 29, 1)"></span>
-                                                                    <span style="color: rgba(29, 29, 29, 1)">
-                                                                        <strong> <!--de --> </strong>
-                                                                    </span>
-                                                                    <span style="color: rgba(29, 29, 29, 1)"></span>
-                                                                    <span style="color: rgba(29, 29, 29, 1)">
-                                                                        <strong> <!-- progression --> </strong>
-                                                                    </span>
-                                                                    <span style="color: rgba(29, 29, 29, 1)"> <!-- post-challenge (test) --> </span>
-                                                                </span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sc-eqPNPO bpmFJQ">
-                                    <div style="background-size:initial;background-position:50% 50%;background-repeat:repeat;background-attachment:initial" id="row-5c526056" class="sc-hUfwpO fRGqJn">
-                                        <div size="12" class="sc-fONwsr fqYvJU">
-                                            <div class="sc-eqPNPO fkKVIT">
-                                                <div id="headline-8b24d072" font-size="16" color="rgba(255, 255, 255, 1)" font-family="Poppins" font-style="normal" font-weight="400" class="sc-rBLzX iBsLwA">
-                                                    <p dir="ltr">
-                                                        <span style="color: rgba(62, 62, 62, 1)">
-                                                            <u>
-                                                                <strong>Exemple Live Semaine 1 :</strong>
-                                                            </u>
-                                                        </span>
-                                                        <span style="color: rgba(62, 62, 62, 1)">pourquoi la course à pied est extrêmement importante pour la santé,</span>
-                                                    </p>
-                                                    <p dir="ltr">
-                                                        <span style="color: rgba(62, 62, 62, 1)">bénéfices court terme, long terme, l'importance pour le mental, changement d’identité, motivation et discipline...</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="sc-eqPNPO hevNpC">
-                                                <div id="headline-845eb5ca" font-size="16" color="rgba(255, 255, 255, 1)" font-family="Poppins" font-style="normal" font-weight="400" class="sc-rBLzX iBsLwA">
-                                                    <p dir="ltr">
-                                                        <span style="color: rgba(62, 62, 62, 1)">
-                                                            <u>
-                                                                <strong>Exemple Live Semaine 1 :</strong>
-                                                            </u>
-                                                        </span>
-                                                        <span style="color: rgba(62, 62, 62, 1)">pourquoi la course à pied est extrêmement importante pour la santé, bénéfices court terme, long terme, l'importance pour le mental, changement d’identité, motivation et discipline...</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="sc-eqPNPO ifbDUV">
+                    </div> -->
+                    
+                 <!--   <div class="sc-eqPNPO ifbDUV">
                         <section style="background-size:initial;background-position:50% 50%;background-repeat:no-repeat;background-attachment:initial" id="section-1b365bd1" class="sc-dHmInP jwPSMl">
                             <div width="100%" class="sc-ejGVNB cRtAtg">
                                 <div class="sc-eqPNPO ifbDUV">
@@ -8858,13 +8635,13 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                           <!-- photo après le challenge est parfaitement fait pour toi <div class="sc-eqPNPO iZltEs">
+                                            photo après le challenge est parfaitement fait pour toi <div class="sc-eqPNPO iZltEs">
                                                 <div class="sc-hjRWVT fsJHfl">
                                                     <picture class="sc-iybRtq jgSkXO">
                                                         <img id="image-0e456479" src="https://d1yei2z3i6k35z.cloudfront.net/7397363/667bdde6a691d_6.png" width="1164" loading="lazy" class="sc-jrIrqw llUDCz"/>
                                                     </picture>
                                                 </div>
-                                            </div> --> 
+                                            </div> 
                                             <div class="sc-eqPNPO cpFfoU">
                                                 <div id="headline-cf47feb8" font-size="16" color="rgba(255, 255, 255, 1)" font-family="Poppins" font-style="normal" font-weight="400" class="sc-rBLzX iBsLwA">
                                                     <p dir="ltr">
@@ -8909,7 +8686,7 @@
                                 </div>
                             </div>
                         </section>
-                    </div>
+                    </div> --> 
                     <!-- INSCRIPTION OUVERTE
                     <div class="sc-eqPNPO ifbDUV">
                         <section style="background-size:initial;background-position:50% 50%;background-repeat:no-repeat;background-attachment:initial" id="section-b657415f" class="sc-dHmInP kbhFSU">
@@ -9551,23 +9328,56 @@
                                 </div>
 
                                 <div class="sc-eqPNPO kEJYic"><div style="background-size:initial;background-position:50% 50%;background-repeat:repeat;background-attachment:initial" id="row-cd0f6297" class="sc-hUfwpO fyndJi"><div size="12" class="sc-fONwsr fqYvJU"><div class="sc-eqPNPO ifbDUV"><div id="headline-846d6f52" font-size="20" color="rgba(238, 87, 5)" font-family="Poppins" font-style="normal" font-weight="400" class="sc-rBLzX iknSFX"><p dir="ltr"><span style="color: rgba(255, 255, 255, 1)"><strong> Manager de performances </strong></span></p></div></div></div></div></div><div class="sc-cNQqM kIQARG"><div id="text-7931a92d" font-size="18" font-family="Poppins" color="rgba(182, 188, 208, 1)" class="sc-rBLzX buBmKt"><div><p dir="ltr">
-                <span style="color: rgba(0, 0, 0, 1)">Depuis mon enfance, j'ai toujours surmonté les défis : je n'ai pas eu la chance de grandir aux côtés de mon père, et j'ai connu </span><span style="color: rgba(0, 0, 0, 1)"><strong>l'isolement et l'obésité</strong></span><span style="color: rgba(0, 0, 0, 1)"> suite à un déménagement qui m'a éloigné de mes amis.</span></p>
+                <span style="color: rgba(0, 0, 0, 1)"> </span></p>
 <p dir="ltr"><br></p>
-<p dir="ltr"><span style="color: rgba(0, 0, 0, 1)">Au lycée, j'ai essayé de m'intégrer en buvant de l'alcool, ce qui m'a valu d'être expulsé. La solitude m'a poussé à </span><span style="color: rgba(0, 0, 0, 1)"><strong>boire encore plus</strong></span><span style="color: rgba(0, 0, 0, 1)">, jusqu'à </span><span style="color: rgba(0, 0, 0, 1)"><strong>atteindre 120 kg</strong></span><span style="color: rgba(0, 0, 0, 1)"> et un point de rupture </span><span style="color: rgba(0, 0, 0, 1)"><strong>à 22 ans</strong></span><span style="color: rgba(0, 0, 0, 1)">.</span></p>
+<p dir="ltr"><span style="color: rgba(0, 0, 0, 1)">
+    
+    <li>
+        <i class="fad fa-chevron-double-right" style="font-size:20px;  color:rgba(238, 87, 5); margin-left: -25px; margin-right: 10px;"></i>
+        2 masters en préparation physique, nutrition, réathlétisation et physiologie de l’exercice - Université Claude Bernard Lyon 1 & Université Libre de Bruxelles. <br> </p>
+    </li>
+<br> 
+    <li>
+        <i class="fad fa-chevron-double-right" style="font-size:20px;  color:rgba(238, 87, 5); margin-left: -25px; margin-right: 10px;"></i>
+        6 saisons en tant que préparateur physique au service d'équipes professionnelles de basket-ball (U18 France, NM2, NM1, ProB).<br> </p>
+    </li>
+<br>
+    <li> 
+        <i class="fad fa-chevron-double-right" style="font-size:20px;  color:rgba(238, 87, 5); margin-left: -25px; margin-right: 10px;"></i>
+        Médailles de Bronze avec l'EQUIPE DE FRANCE U17M au Championnat du Monde de basket-ball - été 2022<br> </p> 
+    </li>
+<br> 
+    <li> 
+        <i class="fad fa-chevron-double-right" style="font-size:20px;  color:rgba(238, 87, 5); margin-left: -25px; margin-right: 10px;"></i>
+        Co-auteur du livre ROUTINES D’ECHAUFFEMENT (édition 4 trainer sortie janvier
+    2024) 
+    </li>
+
+<br>
+
+    <li> 
+        <i class="fad fa-chevron-double-right" style="font-size:20px;  color:rgba(238, 87, 5); margin-left: -25px; margin-right: 10px;"></i>
+        Créateur du podcast Dynamique Step 
+    </li> 
+<br>
+   
+    <li>         
+        <i class="fad fa-chevron-double-right" style="font-size:20px;  color:rgba(238, 87, 5); margin-left: -25px; margin-right: 10px;"></i>
+        Coach et Préparateur physique spécialisé dans le monde l’endurance :
+    accompagnement de plusieurs marathonien, traileur, cycliste, triathlète, skieur, ...
+    </li>
+
+
+</span><span style="color: rgba(0, 0, 0, 1)">.</span></p>
 <p dir="ltr"><br></p>
-<p dir="ltr"><span style="color: rgba(0, 0, 0, 1)">Un jour, j'ai décidé de tout changer : j'ai arrêté l'alcool, adopté une diète stricte et un régime d'entraînement rigoureux.</span></p>
 <p dir="ltr"><br></p>
-<p dir="ltr"><span style="color: rgba(0, 0, 0, 1)"><strong>En 18 mois, j'ai perdu 50 kg.</strong></span></p>
-<p dir="ltr"><br></p>
-<p dir="ltr"><span style="color: rgba(0, 0, 0, 1)">Je suis devenu préparateur physique certifié et ai aidé de nombreuses personnes à transformer leur vie. J'ai couru </span><span style="color: rgba(0, 0, 0, 1)"><strong>mon 1er marathon en solo</strong></span><span style="color: rgba(0, 0, 0, 1)"> et partagé mon parcours sur Instagram, attirant une communauté de plus de 60 000 abonnés.</span></p>
-<p dir="ltr"><br></p>
-<p dir="ltr"><span style="color: rgba(0, 0, 0, 1)">Aujourd'hui, j'ai accompagné des centaines de personnes dans leurs objectifs de course à pied, que ce soit pour perdre du poids, reprendre après une blessure ou se préparer pour des courses.</span></p>
-<p dir="ltr"><br></p>
-<p dir="ltr"><span style="color: rgba(0, 0, 0, 1)">"Runz", c'est ce qui m'aurait sauvé à l'époque : aujourd'hui, je veux offrir à tous les outils pour atteindre leurs objectifs de manière saine et durable.</span></p></div></div></div></div></div></div>
+<p></p>
+</div></div></div></div></div></div>
 
 <div class="sc-hjRWVT brnrNU"> <div class="sc-eqPNPO dvgQkJ"> 
     <picture class="sc-iybRtq jgSkXO"><img id="profil3.png" src="profil3.png" width="467" loading="lazy" ></picture>
 </div>
+
 </div>
 </div>
 </section>
@@ -9742,7 +9552,7 @@
                             </div>
                         </section>
                     </div>
-                    <div class="sc-cNQqM kZxMtl">
+                   <!-- <div class="sc-cNQqM kZxMtl">
                         <section id="section-9cac1476" class="sc-iiUIRa gxWjcI">
                             <div width="wide" class="sc-eLdqWK NtIXI">
                                 <div class="sc-eqPNPO ifbDUV">
@@ -9756,7 +9566,7 @@
                                                 </div>
                                             </div>
                                             <div class="sc-cNQqM bXwvDW">
-                                                <div class="sc-dRFtgE eyKdVs">
+                                                <div class="sc-dRFtgE eyKdVs"> --> 
                                                     <style>
                                                         #row-671e4ce9:hover {
                                                             transform: scale(1.05);
@@ -9796,13 +9606,50 @@
                                                             -ms-transition: all 1s ease;
                                                             transition: all 1s ease;
                                                         }
+
+                                                        .menu-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px; /* Ajustez la hauteur selon votre besoin */
+            border-bottom: 1px solid black; /* Bordure noire en dessous du menu */
+        }
+
+        .menu-item {
+            margin: 0 20px; /* Espacement horizontal entre les éléments du menu */
+            white-space: nowrap; /* Empêche le texte de se couper sur plusieurs lignes */
+        }
+
+        .menu-item a {
+            text-decoration: none;
+            color: rgba(238, 87, 5);
+            font-size: 16px;
+            padding: 10px 15px;
+            border-bottom: 3px solid transparent; /* Ligne sous les liens (transparente par défaut) */
+        }
+
+        .menu-item a:hover {
+            border-bottom-color: black; /* Couleur de la ligne au survol */
+        }
+
+        /* Styles pour le bouton "CALL TO ACTION" */
+        .cta-button {
+            text-decoration: none; /* Supprime le soulignement du lien */
+            white-space: nowrap; /* Empêche le texte de se couper sur plusieurs lignes */
+            font-family: Inter; /* Facultatif : ajustez la famille de police si nécessaire */
+            color: orange; /* Couleur orange pour le texte */
+        }
+
+        .cta-button:hover {
+            color: red; /* Couleur rouge au survol */
+        }
                                                     </style>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="sc-eqPNPO ifbDUV">
+                          <!--    <div class="sc-eqPNPO ifbDUV">
                                     <div style="background-size:initial;background-position:50% 50%;background-repeat:repeat;background-attachment:initial" id="row-5798e192" class="sc-hUfwpO eWjzbc">
                                         <div size="12" class="sc-fONwsr fqYvJU">
                                             <div class="sc-eqPNPO ifbDUV">
@@ -9812,7 +9659,7 @@
                                                             <div id="faq-2959a87e" class="sc-nrwXf frzGPW">
                                                                 <div class="sc-keFjpB jBxhdo">
                                                                     <div font-size="18" color="rgba(24, 24, 24, 1)" font-family="Montserrat" font-style="normal" font-weight="800" class="sc-AnqlK jHUCah">
-                                                                       <!-- Je suis débutante, est-ce que je peux rejoindre le programme ? --> <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
+                                                                       Je suis débutante, est-ce que je peux rejoindre le programme ?  <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
                                                                     </div>
                                                                     <div class="sc-bhlBdH ieqkiw">
                                                                         <div class="sc-cNQqM eigfUL">
@@ -9832,7 +9679,7 @@
                                                             <div id="faq-772dced2" class="sc-nrwXf frzGPW">
                                                                 <div class="sc-keFjpB jBxhdo">
                                                                     <div font-size="18" color="rgba(24, 24, 24, 1)" font-family="Montserrat" font-style="normal" font-weight="800" class="sc-AnqlK jHUCah">
-                                                                        <!-- Combien de temps dure le challenge ? --> <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
+                                                                       Combien de temps dure le challenge ?  <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
                                                                     </div>
                                                                     <div class="sc-bhlBdH ieqkiw">
                                                                         <div class="sc-cNQqM eigfUL">
@@ -9852,7 +9699,7 @@
                                                             <div id="faq-82129686" class="sc-nrwXf frzGPW">
                                                                 <div class="sc-keFjpB jBxhdo">
                                                                     <div font-size="18" color="rgba(24, 24, 24, 1)" font-family="Montserrat" font-style="normal" font-weight="800" class="sc-AnqlK jHUCah">
-                                                                       <!-- Ai-je besoin d &#x27;équipement spécifique pour participer ? --> <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
+                                                                        Ai-je besoin d &#x27;équipement spécifique pour participer ?<i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
                                                                     </div>
                                                                     <div class="sc-bhlBdH ieqkiw">
                                                                         <div class="sc-cNQqM eigfUL">
@@ -9872,7 +9719,7 @@
                                                             <div id="faq-cf97d474" class="sc-nrwXf frzGPW">
                                                                 <div class="sc-keFjpB jBxhdo">
                                                                     <div font-size="18" color="rgba(24, 24, 24, 1)" font-family="Montserrat" font-style="normal" font-weight="800" class="sc-AnqlK jHUCah">
-                                                                        <!-- Comment fonctionne le suivi des entraînements via l &#x27;application ? --> <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
+                                                                         Comment fonctionne le suivi des entraînements via l &#x27;application ?  <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
                                                                     </div>
                                                                     <div class="sc-bhlBdH ieqkiw">
                                                                         <div class="sc-cNQqM eigfUL">
@@ -9898,7 +9745,7 @@
                                                             <div id="faq-ab50f4c4" class="sc-nrwXf frzGPW">
                                                                 <div class="sc-keFjpB jBxhdo">
                                                                     <div font-size="18" color="rgba(24, 24, 24, 1)" font-family="Montserrat" font-style="normal" font-weight="800" class="sc-AnqlK jHUCah">
-                                                                       <!-- Que se passe-t-il si je manque une séance d &#x27;entraînement ? --> <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
+                                                                       Que se passe-t-il si je manque une séance d &#x27;entraînement ? <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
                                                                     </div>
                                                                     <div class="sc-bhlBdH ieqkiw">
                                                                         <div class="sc-cNQqM eigfUL">
@@ -9924,7 +9771,7 @@
                                                             <div id="faq-67776539" class="sc-nrwXf frzGPW">
                                                                 <div class="sc-keFjpB jBxhdo">
                                                                     <div font-size="18" color="rgba(24, 24, 24, 1)" font-family="Montserrat" font-style="normal" font-weight="800" class="sc-AnqlK jHUCah">
-                                                                        <!-- Puis-je adapter le programme en fonction de mon emploi du temps ? --> <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
+                                                                         Puis-je adapter le programme en fonction de mon emploi du temps ? <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
                                                                     </div>
                                                                     <div class="sc-bhlBdH ieqkiw">
                                                                         <div class="sc-cNQqM eigfUL">
@@ -9944,7 +9791,7 @@
                                                             <div id="faq-3c828566" class="sc-nrwXf frzGPW">
                                                                 <div class="sc-keFjpB jBxhdo">
                                                                     <div font-size="18" color="rgba(24, 24, 24, 1)" font-family="Montserrat" font-style="normal" font-weight="800" class="sc-AnqlK jHUCah">
-                                                                       <!-- Comment mesurer mes progrès pendant le challenge ? --> <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
+                                                                       Comment mesurer mes progrès pendant le challenge ? <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
                                                                     </div>
                                                                     <div class="sc-bhlBdH ieqkiw">
                                                                         <div class="sc-cNQqM eigfUL">
@@ -9964,7 +9811,7 @@
                                                             <div id="faq-74223688" class="sc-nrwXf frzGPW">
                                                                 <div class="sc-keFjpB jBxhdo">
                                                                     <div font-size="18" color="rgba(24, 24, 24, 1)" font-family="Montserrat" font-style="normal" font-weight="800" class="sc-AnqlK jHUCah">
-                                                                        <!-- Comment rejoindre la communauté ?<i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"> --> </i>
+                                                                       Comment rejoindre la communauté ?<i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down">  </i>
                                                                     </div>
                                                                     <div class="sc-bhlBdH ieqkiw">
                                                                         <div class="sc-cNQqM eigfUL">
@@ -9984,7 +9831,7 @@
                                                             <div id="faq-39be9d48" class="sc-nrwXf frzGPW">
                                                                 <div class="sc-keFjpB jBxhdo">
                                                                     <div font-size="18" color="rgba(24, 24, 24, 1)" font-family="Montserrat" font-style="normal" font-weight="800" class="sc-AnqlK jHUCah">
-                                                                       <!-- Combien de temps faut-il consacrer à chaque séance d &#x27;entraînement ? --> <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
+                                                                       Combien de temps faut-il consacrer à chaque séance d &#x27;entraînement ? <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
                                                                     </div>
                                                                     <div class="sc-bhlBdH ieqkiw">
                                                                         <div class="sc-cNQqM eigfUL">
@@ -10004,7 +9851,7 @@
                                                             <div id="faq-a12fa361" class="sc-nrwXf frzGPW">
                                                                 <div class="sc-keFjpB jBxhdo">
                                                                     <div font-size="18" color="rgba(24, 24, 24, 1)" font-family="Montserrat" font-style="normal" font-weight="800" class="sc-AnqlK jHUCah">
-                                                                       <!-- Quels types de chaussures de course sont recommandés pour ce challenge ? --> <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
+                                                                       Quels types de chaussures de course sont recommandés pour ce challenge ?<i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
                                                                     </div>
                                                                     <div class="sc-bhlBdH ieqkiw">
                                                                         <div class="sc-cNQqM eigfUL">
@@ -10026,7 +9873,7 @@
                                                             <div id="faq-e8937250" class="sc-nrwXf frzGPW">
                                                                 <div class="sc-keFjpB jBxhdo">
                                                                     <div font-size="18" color="rgba(24, 24, 24, 1)" font-family="Montserrat" font-style="normal" font-weight="800" class="sc-AnqlK jHUCah">
-                                                                       <!-- Y a-t-il des coûts supplémentaires en dehors de l &#x27;inscription au challenge ? --> <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
+                                                                      Y a-t-il des coûts supplémentaires en dehors de l &#x27;inscription au challenge ?<i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
                                                                     </div>
                                                                     <div class="sc-bhlBdH ieqkiw">
                                                                         <div class="sc-cNQqM eigfUL">
@@ -10046,7 +9893,7 @@
                                                             <div id="faq-061989d0" class="sc-nrwXf frzGPW">
                                                                 <div class="sc-keFjpB jBxhdo">
                                                                     <div font-size="18" color="rgba(24, 24, 24, 1)" font-family="Montserrat" font-style="normal" font-weight="800" class="sc-AnqlK jHUCah">
-                                                                       <!-- Puis-je participer au challenge si je suis déjà un coureur expérimenté ? --> <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
+                                                                       Puis-je participer au challenge si je suis déjà un coureur expérimenté ? <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
                                                                     </div>
                                                                     <div class="sc-bhlBdH ieqkiw">
                                                                         <div class="sc-cNQqM eigfUL">
@@ -10066,7 +9913,7 @@
                                                             <div id="faq-01ae7d7b" class="sc-nrwXf frzGPW">
                                                                 <div class="sc-keFjpB jBxhdo">
                                                                     <div font-size="18" color="rgba(24, 24, 24, 1)" font-family="Montserrat" font-style="normal" font-weight="800" class="sc-AnqlK jHUCah">
-                                                                       <!-- Est-ce que je peux contacter quelqu &#x27;un si j &#x27;ai une question ? --> <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
+                                                                      Est-ce que je peux contacter quelqu &#x27;un si j &#x27;ai une question ? <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
                                                                     </div>
                                                                     <div class="sc-bhlBdH ieqkiw">
                                                                         <div class="sc-cNQqM eigfUL">
@@ -10099,7 +9946,7 @@
                                                             <div id="faq-60140b7a" class="sc-nrwXf frzGPW">
                                                                 <div class="sc-keFjpB jBxhdo">
                                                                     <div font-size="18" color="rgba(24, 24, 24, 1)" font-family="Montserrat" font-style="normal" font-weight="800" class="sc-AnqlK jHUCah">
-                                                                      <!-- Quels sont les avantages à long terme de participer à ce challenge ? --> <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
+                                                                     Quels sont les avantages à long terme de participer à ce challenge ?<i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
                                                                     </div>
                                                                     <div class="sc-bhlBdH ieqkiw">
                                                                         <div class="sc-cNQqM eigfUL">
@@ -10119,7 +9966,7 @@
                                                             <div id="faq-63b8b95a" class="sc-nrwXf frzGPW">
                                                                 <div class="sc-keFjpB jBxhdo">
                                                                     <div font-size="18" color="rgba(24, 24, 24, 1)" font-family="Montserrat" font-style="normal" font-weight="800" class="sc-AnqlK jHUCah">
-                                                                       <!-- Le challenge inclut-il un plan alimentaire ou des conseils nutritionnels ? --><i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
+                                                                       Le challenge inclut-il un plan alimentaire ou des conseils nutritionnels ?<i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
                                                                     </div>
                                                                     <div class="sc-bhlBdH ieqkiw">
                                                                         <div class="sc-cNQqM eigfUL">
@@ -10139,28 +9986,15 @@
                                                             <div id="faq-1157640a" class="sc-nrwXf frzGPW">
                                                                 <div class="sc-keFjpB jBxhdo">
                                                                     <div font-size="18" color="rgba(24, 24, 24, 1)" font-family="Montserrat" font-style="normal" font-weight="800" class="sc-AnqlK jHUCah">
-                                                                       <!-- Comment sont structurés les lives hebdomadaires et que couvrent-ils ? --> <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
+                                                                       Comment sont structurés les lives hebdomadaires et que couvrent-ils ?  <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>-->
                                                                     </div>
-                                                                    <div class="sc-bhlBdH ieqkiw">
-                                                                        <div class="sc-cNQqM eigfUL">
-                                                                            <div id="text-b6b0497d" font-size="14" font-family="Poppins" color="rgba(182, 188, 208, 1)" class="sc-rBLzX jkqEBf">
-                                                                                <div>
-                                                                                    <p dir="ltr">
-                                                                                        <span style="color: rgba(74, 74, 74, 1)">Les lives hebdomadaires couvrent des sujets variés comme les techniques d'entraînement, la motivation, la nutrition, et incluent des sessions de Q &amp;A pour répondre à vos questions.</span>
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="sc-cNQqM ckUoTX">
+                                                                   
+                                                        <!-- <div class="sc-cNQqM ckUoTX">
                                                             <div id="faq-0489572c" class="sc-nrwXf frzGPW">
                                                                 <div class="sc-keFjpB jBxhdo">
                                                                     <div font-size="18" color="rgba(24, 24, 24, 1)" font-family="Montserrat" font-style="normal" font-weight="800" class="sc-AnqlK jHUCah">
-                                                                       <!-- Est-ce que le challenge convient aux personnes ayant des problèmes de santé ? --><i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
-                                                                    </div>
+                                                                        Est-ce que le challenge convient aux personnes ayant des problèmes de santé ? <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>-->
+                                                                   <!-- </div>
                                                                     <div class="sc-bhlBdH ieqkiw">
                                                                         <div class="sc-cNQqM eigfUL">
                                                                             <div id="text-11144a36" font-size="14" font-family="Poppins" color="rgba(182, 188, 208, 1)" class="sc-rBLzX jkqEBf">
@@ -10179,7 +10013,7 @@
                                                             <div id="faq-2724fd24" class="sc-nrwXf frzGPW">
                                                                 <div class="sc-keFjpB jBxhdo">
                                                                     <div font-size="18" color="rgba(24, 24, 24, 1)" font-family="Montserrat" font-style="normal" font-weight="800" class="sc-AnqlK jHUCah">
-                                                                       <!-- Les séances d &#x27;entraînement peuvent-elles être faites à l &#x27;intérieur (sur tapis de course) ? --> <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
+                                                                       Les séances d &#x27;entraînement peuvent-elles être faites à l &#x27;intérieur (sur tapis de course) ?  <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"></i>
                                                                     </div>
                                                                     <div class="sc-bhlBdH ieqkiw">
                                                                         <div class="sc-cNQqM eigfUL">
@@ -10199,7 +10033,7 @@
                                                             <div id="faq-ef2412ea" class="sc-nrwXf frzGPW">
                                                                 <div class="sc-keFjpB jBxhdo">
                                                                     <div font-size="18" color="rgba(24, 24, 24, 1)" font-family="Montserrat" font-style="normal" font-weight="800" class="sc-AnqlK jHUCah">
-                                                                        <!-- Pendant combien de temps je vais avoir accès au contenu ?<i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down"> --> </i>
+                                                                        Pendant combien de temps je vais avoir accès au contenu ? <i class="sc-eitiEO hLKLGm fas fa-arrow-alt-square-down">  </i>
                                                                     </div>
                                                                     <div class="sc-bhlBdH ieqkiw">
                                                                         <div class="sc-cNQqM eigfUL">
@@ -10230,19 +10064,19 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                           <!-- <div class="sc-cNQqM cakiXW">
+                                            <div class="sc-cNQqM cakiXW">
                                                 <a id="button-6737bae2" font-family="Inter" href="https://go.runz.fr/bdc-challenge" class="sc-bdVaJa cHIcJe">
                                                     <div class="sc-bwzfXH eqoTOr">
                                                         Rejoindre le challenge<i class="sc-htpNat fkXTIP fas fa-arrow-alt-circle-right"></i>
                                                     </div>
                                                 </a>
-                                            </div> --> 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </section>
-                    </div>
+                    </div> 
 
                     <div class="sc-eqPNPO kCUOIG">
 
@@ -10259,7 +10093,7 @@
                                 <div class="sc-eqPNPO gRPSwB">                                   
                                     <div class="sc-hjRWVT iDwetz">
                                         <picture class="sc-iybRtq jgSkXO">
-                                            <img id="youtube.png" src="avis1.png" width="335" loading="lazy"/>  <!-- class="sc-jrIrqw XZoAR" --> 
+                                            <img id="youtube.png" src="avis1.png" width="335" loading="lazy"/>   class="sc-jrIrqw XZoAR" 
                                         </picture>
                                     </div>
                                 </div>
@@ -10269,7 +10103,7 @@
                                 <div class="sc-eqPNPO ixczXS">
                                     <div id="headline-cd28fe6a" font-size="32" color="rgba(255, 255, 255, 1)" font-family="Poppins" font-style="normal" font-weight="700" class="sc-rBLzX leZdPT">
                                         <p dir="ltr">
-                                            <img id="youtube.png" src="avis2.png" width="335" loading="lazy"/>  <!-- class="sc-jrIrqw XZoAR" --> 
+                                            <img id="youtube.png" src="avis2.png" width="335" loading="lazy"/>   class="sc-jrIrqw XZoAR" 
                                         </p>
                                     </div>
                                 </div>
@@ -10278,7 +10112,7 @@
                                 <div size="6" class="sc-fONwsr kqTGZD">
                                     <div class="sc-eqPNPO ixczXS">
                                             <picture class="sc-iybRtq jgSkXO">
-                                                <img id="youtube.png" src="avis3.png" width="335" loading="lazy"/>  <!-- class="sc-jrIrqw XZoAR" --> 
+                                                <img id="youtube.png" src="avis3.png" width="335" loading="lazy"/>  class="sc-jrIrqw XZoAR"  
                                             </picture>
                                         </div>
                                     </div>
@@ -10287,7 +10121,7 @@
                                 
                             </div>
                             </div>
-                        </div>
+                        </div> --> 
 
                               
 
@@ -13687,7 +13521,7 @@
                                 "mobile": true,
                                 "desktop": true
                             },
-                            "htmlAttrId": "image-a8fb0bec",
+                            "htmlAttrId": "tarifs.png",
                             "mobileWidth": 308,
                             "mobileMargin": {
                                 "marginTop": 0,
@@ -18751,8 +18585,11 @@
                                 "paddingBottom": 0
                             },
                             "mobileFontSize": 14,
-                            "rawContentState": "{\"blocks\":[{\"key\":\"7gjsu\",\"text\":\"Depuis mon enfance, j'ai toujours surmonté les défis : je n'ai pas eu la chance de grandir aux côtés de mon père, et j'ai connu l'isolement et l'obésité suite à un déménagement qui m'a éloigné de mes amis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":205,\"style\":\"rgba(0, 0, 0, 1)\"},{\"offset\":128,\"length\":24,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"2qhnm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4nb98\",\"text\":\"Au lycée, j'ai essayé de m'intégrer en buvant de l'alcool, ce qui m'a valu d'être expulsé. La solitude m'a poussé à boire encore plus, jusqu'à atteindre 120 kg et un point de rupture à 22 ans.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":192,\"style\":\"rgba(0, 0, 0, 1)\"},{\"offset\":116,\"length\":17,\"style\":\"BOLD\"},{\"offset\":143,\"length\":16,\"style\":\"BOLD\"},{\"offset\":183,\"length\":8,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1rdck\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d4imf\",\"text\":\"Un jour, j'ai décidé de tout changer : j'ai arrêté l'alcool, adopté une diète stricte et un régime d'entraînement rigoureux.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":124,\"style\":\"rgba(0, 0, 0, 1)\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"clep6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d8mnf\",\"text\":\"En 18 mois, j'ai perdu 50 kg.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":29,\"style\":\"BOLD\"},{\"offset\":0,\"length\":29,\"style\":\"rgba(0, 0, 0, 1)\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fq9g5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d90qs\",\"text\":\"Je suis devenu préparateur physique certifié et ai aidé de nombreuses personnes à transformer leur vie. J'ai couru mon 1er marathon en solo et partagé mon parcours sur Instagram, attirant une communauté de plus de 60 000 abonnés.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":229,\"style\":\"rgba(0, 0, 0, 1)\"},{\"offset\":115,\"length\":24,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"db891\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b9d5p\",\"text\":\"Aujourd'hui, j'ai accompagné des centaines de personnes dans leurs objectifs de course à pied, que ce soit pour perdre du poids, reprendre après une blessure ou se préparer pour des courses.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":190,\"style\":\"rgba(0, 0, 0, 1)\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5rdlu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"14suf\",\"text\":\"\\\"Runz\\\", c'est ce qui m'aurait sauvé à l'époque : aujourd'hui, je veux offrir à tous les outils pour atteindre leurs objectifs de manière saine et durable.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":154,\"style\":\"rgba(0, 0, 0, 1)\"}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-                            "html": "\x3cp dir=\"ltr\">\x3cspan style=\"color: rgba(0, 0, 0, 1)\">Depuis mon enfance, j'ai toujours surmonté les défis : je n'ai pas eu la chance de grandir aux côtés de mon père, et j'ai connu \x3c/span>\x3cspan style=\"color: rgba(0, 0, 0, 1)\">\x3cstrong>l'isolement et l'obésité\x3c/strong>\x3c/span>\x3cspan style=\"color: rgba(0, 0, 0, 1)\"> suite à un déménagement qui m'a éloigné de mes amis.\x3c/span>\x3c/p>\n\x3cp dir=\"ltr\">\x3cbr>\x3c/p>\n\x3cp dir=\"ltr\">\x3cspan style=\"color: rgba(0, 0, 0, 1)\">Au lycée, j'ai essayé de m'intégrer en buvant de l'alcool, ce qui m'a valu d'être expulsé. La solitude m'a poussé à \x3c/span>\x3cspan style=\"color: rgba(0, 0, 0, 1)\">\x3cstrong>boire encore plus\x3c/strong>\x3c/span>\x3cspan style=\"color: rgba(0, 0, 0, 1)\">, jusqu'à \x3c/span>\x3cspan style=\"color: rgba(0, 0, 0, 1)\">\x3cstrong>atteindre 120 kg\x3c/strong>\x3c/span>\x3cspan style=\"color: rgba(0, 0, 0, 1)\"> et un point de rupture \x3c/span>\x3cspan style=\"color: rgba(0, 0, 0, 1)\">\x3cstrong>à 22 ans\x3c/strong>\x3c/span>\x3cspan style=\"color: rgba(0, 0, 0, 1)\">.\x3c/span>\x3c/p>\n\x3cp dir=\"ltr\">\x3cbr>\x3c/p>\n\x3cp dir=\"ltr\">\x3cspan style=\"color: rgba(0, 0, 0, 1)\">Un jour, j'ai décidé de tout changer : j'ai arrêté l'alcool, adopté une diète stricte et un régime d'entraînement rigoureux.\x3c/span>\x3c/p>\n\x3cp dir=\"ltr\">\x3cbr>\x3c/p>\n\x3cp dir=\"ltr\">\x3cspan style=\"color: rgba(0, 0, 0, 1)\">\x3cstrong>En 18 mois, j'ai perdu 50 kg.\x3c/strong>\x3c/span>\x3c/p>\n\x3cp dir=\"ltr\">\x3cbr>\x3c/p>\n\x3cp dir=\"ltr\">\x3cspan style=\"color: rgba(0, 0, 0, 1)\">Je suis devenu préparateur physique certifié et ai aidé de nombreuses personnes à transformer leur vie. J'ai couru \x3c/span>\x3cspan style=\"color: rgba(0, 0, 0, 1)\">\x3cstrong>mon 1er marathon en solo\x3c/strong>\x3c/span>\x3cspan style=\"color: rgba(0, 0, 0, 1)\"> et partagé mon parcours sur Instagram, attirant une communauté de plus de 60 000 abonnés.\x3c/span>\x3c/p>\n\x3cp dir=\"ltr\">\x3cbr>\x3c/p>\n\x3cp dir=\"ltr\">\x3cspan style=\"color: rgba(0, 0, 0, 1)\">Aujourd'hui, j'ai accompagné des centaines de personnes dans leurs objectifs de course à pied, que ce soit pour perdre du poids, reprendre après une blessure ou se préparer pour des courses.\x3c/span>\x3c/p>\n\x3cp dir=\"ltr\">\x3cbr>\x3c/p>\n\x3cp dir=\"ltr\">\x3cspan style=\"color: rgba(0, 0, 0, 1)\">\"Runz\", c'est ce qui m'aurait sauvé à l'époque : aujourd'hui, je veux offrir à tous les outils pour atteindre leurs objectifs de manière saine et durable.\x3c/span>\x3c/p>"
+                            "rawContentState": "{\"blocks\":[{\"key\":\"7gjsu\",\"text\":\" "> test 
+                            
+                        
+                            "html": "\x3cp dir=\"ltr\">\x3cspan style=\"color: rgba(0, 0, 0, 1)\"> 
+                          
                         },
                         "c7080aab-4cd6-473f-8580-34f4892c39b2": {
                             "id": "c7080aab-4cd6-473f-8580-34f4892c39b2",
