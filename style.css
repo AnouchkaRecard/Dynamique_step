@@ -7908,8 +7908,18 @@ img {
     }
 
     .sc-iybRtq {
-        width: 100%; /* Assure que les images prennent toute la largeur de l'écran */
+        width: 70%; /* Assure que les images prennent toute la largeur de l'écran */
+        margin: 0 auto; /* Centre le conteneur des images horizontalement */
+        display: block; /* Assure que l'image s'affiche comme un bloc pour centrer le contenu */
     }
+
+    .sc-iybRtq img {
+        max-width: 100%; /* Assure que les images ne dépassent pas leur conteneur */
+        height: auto; /* Maintient le ratio d'aspect de l'image */
+        display: block; /* Supprime les espaces blancs sous l'image */
+    }
+}
+    
 
     .sc-cNQqM img {
         width: 100%; /* Assure que les images ne dépassent pas */
