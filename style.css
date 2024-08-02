@@ -8103,3 +8103,15 @@ body {
         justify-content: center; /* Centre horizontalement le contenu */
     }
 }
+
+/* Par défaut, les <br> sont visibles */
+.spacer {
+    display: block;
+}
+
+/* Cacher les <br> sur les écrans mobiles (max-width: 768px peut être ajusté selon vos besoins) */
+@media only screen and (max-width: 768px) {
+    .spacer {
+        display: none;
+    }
+}
