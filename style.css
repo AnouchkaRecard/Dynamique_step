@@ -3584,13 +3584,55 @@ ul {
 }
 
 /* sc-component-id: sc-iybRtq */
+/* Styles pour la classe .kLaVss */
 .kLaVss {
     position: relative;
     display: block;
     height: 0;
     overflow: visible;
-    padding-bottom: 29.67%;
+    padding-bottom: 29.67%; /* Aspect ratio pour les grands écrans */
+    text-align: center; /* Centre le contenu horizontalement */
 }
+
+/* Styles pour les petits écrans */
+@media only screen and (max-width: 800px) {
+    .kLaVss {
+        padding-bottom: 50%; /* Ajuster le ratio d'aspect pour les petits écrans */
+    }
+
+    .kLaVss img {
+        max-width: 100%;
+        height: auto; /* Assurer que les images gardent leurs proportions */
+    }
+}
+
+/* Styles pour les écrans très petits (mobile) */
+@media (max-width: 768px) {
+    .sc-cNQqM {
+        flex-direction: column; /* Empile les divs verticalement */
+        align-items: center; /* Centre les éléments */
+    }
+
+    .sc-fONwsr {
+        width: 100%; /* Assure que les divs prennent toute la largeur de l'écran */
+    }
+
+    .sc-iybRtq {
+        width: 100%; /* Assure que les images prennent toute la largeur de l'écran */
+        text-align: center; /* Centre l'image horizontalement */
+    }
+
+    .mobile-section .sc-iybRtq.itdlji {
+        height: auto !important;
+        padding-bottom: 0 !important;
+    }
+    
+    .mobile-section .sc-iybRtq.itdlji img {
+        width: 100%; /* S'assure que l'image prend la largeur du conteneur */
+        height: auto;
+    }
+}
+
 
 @media only screen and (max-width: 800px) {
     .kLaVss {
@@ -7940,10 +7982,6 @@ img {
 
     }
 
-    .sc-iybRtq img {
-        width: 100%; /* Assure que les images ne dépassent pas */
-
-    }
 
     .sc-iiUIRa img {
         width: 100%; /* Assure que les images ne dépassent pas */
@@ -8016,6 +8054,8 @@ img {
         width: 90%;
         margin-bottom: 10px;
     }
+
+
 }
 
 /* Exemple pour éviter les débordements horizontaux */
