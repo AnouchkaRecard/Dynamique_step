@@ -2166,7 +2166,7 @@ ul {
         padding-right: 0px;
         padding-bottom: 0px;
         padding-left: 0px;
-        font-size: 75px;
+        font-size: 80px;
         line-height: 65px;
     }
 }
@@ -6788,7 +6788,7 @@ ul {
     .fGfYv {
         margin-top:0px;
         margin-right: 10px;
-        margin-bottom: 550px; /* a verifier */
+        margin-bottom: 7px; /* fin section */
         margin-left: 10px;
     }
 }
@@ -7970,7 +7970,7 @@ img {
         width: 80%; /* Assure que les boutons ne dépassent pas */
         margin-bottom: 10px; /* Espace entre les boutons */
     }
-}
+
 
 /* Masquer la section mobile par défaut */
 .mobile-section {
