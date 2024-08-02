@@ -8064,7 +8064,7 @@ body {
     display: flex; /* Utilisation de flexbox pour une disposition plus facile */
     justify-content: center; /* Centre le contenu horizontalement */
     align-items: center; /* Centre le contenu verticalement */
-    width: 100%; /* Assure que le conteneur prend toute la largeur disponible */
+    width: 60%; /* Assure que le conteneur prend toute la largeur disponible */
     height: auto; /* Ajuste la hauteur en fonction du contenu */
 }
 
