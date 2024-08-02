@@ -3582,6 +3582,33 @@ ul {
         align-self: center;
     }
 }
+/* Styles généraux pour les écrans de taille normale et grande */
+.sc-iybRtq {
+    display: block;
+    width: auto; /* Garde la largeur originale de l'image */
+    margin: 0 auto; /* Centre l'image horizontalement */
+}
+
+.content-container {
+    text-align: center; /* Centre le contenu horizontalement */
+}
+
+/* Styles pour les écrans très petits (mobile) */
+@media (max-width: 768px) {
+    .sc-iybRtq {
+        width: 100%; /* Assure que les images prennent toute la largeur du conteneur */
+    }
+
+    .sc-iybRtq img {
+        max-width: 100%; /* S'assure que l'image ne dépasse pas la largeur du conteneur */
+        height: auto; /* Maintient les proportions de l'image */
+    }
+
+    /* S'assurer que le conteneur principal est également centré */
+    .content-container {
+        text-align: center;
+    }
+}
 
 /* sc-component-id: sc-iybRtq */
 /* Styles pour la classe .kLaVss */
