@@ -2814,16 +2814,35 @@ ul {
 
 @media only screen and (max-width: 800px) {
     .gYJwkZ {
-        -webkit-align-self:unset;
+        -webkit-align-self: unset;
         -ms-flex-item-align: unset;
         align-self: unset;
         width: 100%;
+        margin-bottom: 5px; /* bord de la 1ère section matthieu&edgar */
         grid-column-start: 1;
         grid-column-end: 12;
         padding-left: 0;
         padding-right: 0;
     }
+
+    /* Assurer que les images ne dépassent pas */
+    .gYJwkZ img {
+        max-width: 100%;
+        height: auto; /* Assurer que les images gardent leurs proportions */
+    }
+
+    /* Assurer que le texte ne dépasse pas */
+    .gYJwkZ p {
+        word-wrap: break-word; /* Forcer le texte à aller à la ligne si nécessaire */
+    }
+
+    /* Si nécessaire, ajuster les marges internes */
+    .gYJwkZ .sc-cNQqM {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
+
 
 .kqTGZD {
     display: -webkit-box;
@@ -3572,6 +3591,32 @@ ul {
     overflow: visible;
     padding-bottom: 29.67%;
 }
+
+@media only screen and (max-width: 800px) {
+    .kLaVss {
+        padding-bottom: 50%; /* Ajuster le ratio d'aspect pour les petits écrans */
+    }
+
+    .kLaVss img {
+        max-width: 100%;
+        height: auto; /* Assurer que les images gardent leurs proportions */
+    }
+
+    /* Pour le texte, s'assurer qu'il s'adapte bien */
+    .sc-cNQqM p {
+        word-wrap: break-word; /* Forcer le texte à aller à la ligne si nécessaire */
+        padding-left: 15px; /* Ajouter du padding si nécessaire pour éviter le chevauchement */
+        padding-right: 15px;
+    }
+
+    /* Assurer que le conteneur ajuste bien sa largeur */
+    .sc-fONwsr {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 
 .itdlji {
     position: relative;
@@ -6736,14 +6781,14 @@ ul {
 .fGfYv {
     position: relative;
     text-align: initial;
-    margin: 20px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 @media only screen and (max-width: 800px) {
     .fGfYv {
         margin-top:0px;
         margin-right: 10px;
-        margin-bottom: 0px;
+        margin-bottom: 4px; /* fin marge section 2 ou section 3 */
         margin-left: 10px;
     }
 }
@@ -7863,7 +7908,7 @@ img {
     }
 
     .sc-iybRtq {
-        width: 100%; /* Assure que les images prennent toute la largeur de l'écran */
+        width: 75%; /* Assure que les images prennent toute la largeur de l'écran / taille img mobile */
     }
 
     .sc-cNQqM img {
@@ -7942,3 +7987,4 @@ img {
 body {
     overflow-x: hidden; /* Cache tout débordement horizontal */
 }
+
