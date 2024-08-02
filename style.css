@@ -3368,6 +3368,9 @@ ul {
 }
 
 @media only screen and (max-width: 800px) {
+    margin-bottom: 400px; /* Ajoute une marge inférieure plus grande pour l'espace après l'image */
+
+
 }
 
 .hyWwgf {
@@ -8024,7 +8027,7 @@ img {
 
     .mobile-section .sc-iybRtq.itdlji {
         height: auto !important;
-        padding-bottom: 0 !important;
+        padding-bottom: 110 !important;
     }
 
     .mobile-section .sc-hjRWVT.fsJHfl {
@@ -8091,7 +8094,7 @@ body {
         display: flex; /* Utilisation de flexbox pour centrer le contenu */
         justify-content: center; /* Centre horizontalement le conteneur */
         align-items: center; /* Centre verticalement le conteneur */
-        margin-bottom: 30px; /* Ajoute une marge inférieure plus grande pour l'espace après l'image */
+        margin-bottom: 60px; /* Ajoute une marge inférieure plus grande pour l'espace après l'image */
     }
 
     .mobile-section .sc-hjRWVT.fsJHfl {
