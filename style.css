@@ -7909,19 +7909,10 @@ img {
 
     .sc-iybRtq {
         width: 75%; /* Assure que les images prennent toute la largeur de l'écran / taille img mobile */
-        display: flex; /* Utiliser Flexbox pour centrer l'image dans son conteneur */
-        justify-content: center; /* Centre horizontalement l'image dans le conteneur */
-        align-items: center; /* Centre verticalement l'image dans le conteneur */
-        padding: 0; /* Enlève tout padding qui pourrait affecter le centrage */
-    
     }
 
     .sc-cNQqM img {
         width: 100%; /* Assure que les images ne dépassent pas */
-        display: flex; /* Utiliser Flexbox pour centrer l'image dans son conteneur */
-        justify-content: center; /* Centre horizontalement l'image dans le conteneur */
-        align-items: center; /* Centre verticalement l'image dans le conteneur */
-    
     }
 
     .button-container {
