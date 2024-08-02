@@ -7912,6 +7912,7 @@ img {
         display: flex; /* Utiliser Flexbox pour centrer l'image dans son conteneur */
         justify-content: center; /* Centre horizontalement l'image dans le conteneur */
         align-items: center; /* Centre verticalement l'image dans le conteneur */
+        padding: 0; /* Enlève tout padding qui pourrait affecter le centrage */
     
     }
 
