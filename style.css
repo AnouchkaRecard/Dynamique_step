@@ -8104,7 +8104,7 @@ body {
     }
 }
 
-/* Par défaut, les <br> sont visibles */
+/* Par défaut, les <br> sont visibles espace PC */
 .spacer {
     display: block;
 }
@@ -8113,5 +8113,17 @@ body {
 @media only screen and (max-width: 768px) {
     .spacer {
         display: none;
+    }
+}
+
+/* Par défaut, masquer les <br> sur les grands écrans espace mobile */
+.mobile-only {
+    display: none;
+}
+
+/* Afficher les <br> uniquement sur les petits écrans (mobiles) */
+@media only screen and (max-width: 768px) {
+    .mobile-only {
+        display: block;
     }
 }
