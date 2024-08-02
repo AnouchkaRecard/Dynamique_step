@@ -7911,6 +7911,10 @@ img {
         width: 75%; /* Assure que les images prennent toute la largeur de l'écran / taille img mobile */
     }
 
+    .sc-iybRtq_1 {
+        width: 65%; /* Assure que les images prennent toute la largeur de l'écran / taille img mobile */
+    }
+
     .sc-cNQqM img {
         width: 100%; /* Assure que les images ne dépassent pas */
     }
