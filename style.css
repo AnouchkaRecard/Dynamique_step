@@ -7975,10 +7975,6 @@ img {
 
     }
 
-    .sc-hjRWVT img {
-        width: 100%; /* Assure que les images ne dépassent pas */
-
-    }
 
 
     .sc-iiUIRa img {
@@ -8060,4 +8056,49 @@ img {
 body {
     overflow-x: hidden; /* Cache tout débordement horizontal */
 }
+
+/* Styles généraux pour les écrans de taille normale et grande */
+.sc-hjRWVT.fsJHfl {
+    display: flex; /* Utilisation de flexbox pour une disposition plus facile */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+    width: 100%; /* Assure que le conteneur prend toute la largeur disponible */
+    height: auto; /* Ajuste la hauteur en fonction du contenu */
+}
+
+.sc-iybRtq.itdlji {
+    width: auto; /* Garde la largeur originale de l'image */
+    margin: 0 auto; /* Centre le conteneur de l'image horizontalement */
+}
+
+.sc-iybRtq.itdlji img {
+    width: 100%; /* Assure que l'image s'adapte à la largeur du conteneur */
+    height: auto; /* Maintient les proportions de l'image */
+}
+
+/* Styles pour les écrans très petits (mobile) */
+@media only screen and (max-width: 800px) {
+    .desktop-section {
+        display: none; /* Masque la section de bureau sur les petits écrans */
+    }
+
+    .mobile-section {
+        display: block; /* Affiche la section mobile sur les petits écrans */
+    }
+
+    .mobile-section .sc-iybRtq.itdlji {
+        height: auto !important; /* Assure que la hauteur s'ajuste automatiquement */
+        padding-bottom: 0 !important; /* Supprime le padding de bas pour éviter des espaces inutiles */
+        display: flex; /* Utilisation de flexbox pour centrer le contenu */
+        justify-content: center; /* Centre horizontalement le conteneur */
+        align-items: center; /* Centre verticalement le conteneur */
+    }
+
+    .mobile-section .sc-hjRWVT.fsJHfl {
+        width: 100%; /* Assure que le conteneur prend toute la largeur disponible */
+        display: flex; /* Utilisation de flexbox pour centrer le contenu */
+        justify-content: center; /* Centre horizontalement le contenu */
+    }
+}
+
 
