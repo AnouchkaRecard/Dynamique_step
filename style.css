@@ -6788,7 +6788,7 @@ ul {
     .fGfYv {
         margin-top:0px;
         margin-right: 10px;
-        margin-bottom: 4px; /* fin marge section 2 ou section 3 */
+        margin-bottom: 550px; /* a verifier */
         margin-left: 10px;
     }
 }
@@ -7908,7 +7908,7 @@ img {
     }
 
     .sc-iybRtq {
-        width: 75%; /* Assure que les images prennent toute la largeur de l'écran / taille img mobile */
+        width: 100%; /* Assure que les images prennent toute la largeur de l'écran */
     }
 
     .sc-cNQqM img {
@@ -7945,11 +7945,6 @@ img {
     }
 
     .sc-iiUIRa img {
-        width: 100%; /* Assure que les images ne dépassent pas */
-
-    }
-
-    .sc-eLdqWK img {
         width: 100%; /* Assure que les images ne dépassent pas */
 
     }
