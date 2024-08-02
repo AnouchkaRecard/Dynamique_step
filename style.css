@@ -7914,7 +7914,7 @@ img {
     }
 
     .sc-iybRtq img {
-        max-width: 100%; /* Assure que les images ne dépassent pas leur conteneur */
+        max-width: 80%; /* Assure que les images ne dépassent pas leur conteneur */
         height: auto; /* Maintient le ratio d'aspect de l'image */
         display: block; /* Supprime les espaces blancs sous l'image */
     }
