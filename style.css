@@ -1753,6 +1753,26 @@ ul {
     }
 }
 
+.gradient-shadow {
+    font-size: 58px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    text-align: center;
+    line-height: 68px;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 2px 2px 5px rgba(4,44, 84, 1), -2px -2px 5px rgba(93, 184, 255,1);
+}
+
+.gradient-shadow_1 {
+    font-size: 58px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    text-align: center;
+    line-height: 68px;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 2px 2px 5px rgba(255, 49, 49, 1), -2px -2px 5px rgba(255, 145, 77,1); 
+}
+
 .leZdPT {
     word-break: break-word;
     -webkit-transition: box-shadow 0.1s ease-in-out;
@@ -3206,8 +3226,11 @@ ul {
 .dBiDZf {
     font-weight: bold;
     font-size: 19px;
-    color: rgba(257, 116, 68,1);
+    background: linear-gradient(90deg, rgba(255, 49, 49, 1) 0%, rgba(255, 145, 77, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 
 @media only screen and (max-width: 800px) {
     .dBiDZf {
@@ -3252,7 +3275,7 @@ ul {
 @media only screen and (max-width: 800px) {
     .BEuta {
         font-size:4px;
-        color: rgba(255,255,255,1);
+        color: rgba(4,44,84,1); /*verifier*/
     }
 }
 
@@ -3622,7 +3645,7 @@ ul {
     grid-template-columns: repeat(12,1fr);
     -webkit-column-gap: 20px;
     column-gap: 20px;
-    background-color: rgba(26,26,26,0.92);
+    background-color: rgba(26,26,26,0.94);
     padding-top: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
@@ -3633,7 +3656,7 @@ ul {
     border-bottom-right-radius: 10px;
     border-style: solid;
     border-width: 1px;
-    border-color: rgba(60,67,75,1);
+    border-color: rgba(26,26,26,0.94);
     background-image: none;
     -webkit-column-gap: unset !important;
     column-gap: unset !important;
@@ -3645,7 +3668,7 @@ ul {
         padding-right: 10px;
         padding-bottom: 5px;
         padding-left: 10px;
-        box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+        box-shadow: 0 1px 5px rgba(26,26,26,0.94);
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         border-bottom-left-radius: 5px;
@@ -3825,9 +3848,9 @@ ul {
     -webkit-column-gap: 20px;
     column-gap: 20px;
     padding: 10px 2px; /* Combine padding-top, padding-right, padding-bottom, and padding-left */
-    background-color: rgba(252,116,68, 0.4);
+    background-color: rgba(251, 251, 251, 0.5);
     position: relative; /* Ensure positioning context for pseudo-element if used */
-    box-shadow: inset 0 0 10px rgba(4,44,84, 0.5); /* Create an inset shadow for the "creux" effect */
+    box-shadow: inset 0 0 10px rgba(4,44,84, 0.3); /* Create an inset shadow for the "creux" effect */
 }
 
 
@@ -3949,7 +3972,7 @@ ul {
     grid-template-columns: repeat(12,1fr);
     -webkit-column-gap: 20px;
     column-gap: 20px;
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255,255,255,1); /* fond 01 02 03 04 */
     padding-top: 30px;
     padding-right: 10px;
     padding-bottom: 20px;
@@ -7623,23 +7646,29 @@ margin-left: 10px; /* Adjust spacing for the icon */
     text-align: center; /* Centre le texte */
 }
 
-/* Styles pour les nombres */
+/* Styles pour les nombres */ 
 .timer .sc-ipZHIp {
     font-size: 22px; /* Taille de la police pour les nombres */
-    color: #fc7444; /* Couleur des nombres (orange dans cet exemple) */
+    background: linear-gradient(90deg, rgba(255, 49, 49, 1) 0%, rgba(255, 145, 77, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 
 /* Styles pour les labels (jours, heures, minutes, secondes) */
 .timer .sc-iGrrsa {
     font-size: 12px; /* Taille de la police pour les labels */
-    color: #666; /* Couleur des labels (gris clair dans cet exemple) */
+    background: linear-gradient(90deg, rgba(255, 49, 49, 1) 0%, rgba(255, 145, 77, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Séparateurs */
 .timer .sc-iqzUVk {
     font-size: 22px; /* Taille de la police pour les deux-points */
-    color: #fc7444; /* Couleur des deux-points (orange dans cet exemple) */
-    margin: 0 5px; /* Espacement horizontal entre les deux-points et les nombres */
+    background: linear-gradient(90deg, rgba(255, 49, 49, 1) 0%, rgba(255, 145, 77, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .timer {
@@ -7647,6 +7676,8 @@ margin-left: 10px; /* Adjust spacing for the icon */
     align-items: center;
     justify-content: center;
     font-family: Arial, sans-serif;
+    background: rgb(26,26,26,0.94);
+
 }
 
 /* Sections individuelles pour les jours, heures, minutes, et secondes */
@@ -7658,25 +7689,31 @@ margin-left: 10px; /* Adjust spacing for the icon */
 /* Styles pour les nombres */
 .timer .sc-ipZHIp {
     font-size: 22px; /* Taille de la police pour les nombres */
-    color: #fc7444; /* Couleur des nombres (orange dans cet exemple) */
+    background: linear-gradient(90deg, rgba(255, 49, 49, 1) 0%, rgba(255, 145, 77, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 /* Styles pour les labels (jours, heures, minutes, secondes) */
 .timer .sc-iGrrsa {
     font-size: 12px; /* Taille de la police pour les labels */
-    color: #666; /* Couleur des labels (gris clair dans cet exemple) */
+    background: linear-gradient(90deg, rgba(255, 49, 49, 1) 0%, rgba(255, 145, 77, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 /* Séparateurs */
 .timer .sc-iqzUVk {
     font-size: 22px; /* Taille de la police pour les deux-points */
-    color: #fc7444; /* Couleur des deux-points (orange dans cet exemple) */
+    background: linear-gradient(90deg, rgba(255, 49, 49, 1) 0%, rgba(255, 145, 77, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin: 0 5px; /* Espacement horizontal entre les deux-points et les nombres */
 }
 
 element.style {
     font-size: 20px;
-    color: rgba(150, 134, 255, 1);
+    background: linear-gradient(90deg, rgba(255, 49, 49, 1) 0%, rgba(255, 145, 77, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-left: -25px;
     margin-right: 10px;
 }
