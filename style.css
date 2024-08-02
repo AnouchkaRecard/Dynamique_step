@@ -3582,84 +3582,15 @@ ul {
         align-self: center;
     }
 }
-/* Styles généraux pour les écrans de taille normale et grande */
-.sc-iybRtq {
-    display: block;
-    width: auto; /* Garde la largeur originale de l'image */
-    margin: 0 auto; /* Centre l'image horizontalement */
-}
-
-.content-container {
-    text-align: center; /* Centre le contenu horizontalement */
-}
-
-/* Styles pour les écrans très petits (mobile) */
-@media (max-width: 768px) {
-    .sc-iybRtq {
-        width: 100%; /* Assure que les images prennent toute la largeur du conteneur */
-    }
-
-    .sc-iybRtq img {
-        max-width: 100%; /* S'assure que l'image ne dépasse pas la largeur du conteneur */
-        height: auto; /* Maintient les proportions de l'image */
-    }
-
-    /* S'assurer que le conteneur principal est également centré */
-    .content-container {
-        text-align: center;
-    }
-}
 
 /* sc-component-id: sc-iybRtq */
-/* Styles pour la classe .kLaVss */
 .kLaVss {
     position: relative;
     display: block;
     height: 0;
     overflow: visible;
-    padding-bottom: 29.67%; /* Aspect ratio pour les grands écrans */
-    text-align: center; /* Centre le contenu horizontalement */
+    padding-bottom: 29.67%;
 }
-
-/* Styles pour les petits écrans */
-@media only screen and (max-width: 800px) {
-    .kLaVss {
-        padding-bottom: 50%; /* Ajuster le ratio d'aspect pour les petits écrans */
-    }
-
-    .kLaVss img {
-        max-width: 100%;
-        height: auto; /* Assurer que les images gardent leurs proportions */
-    }
-}
-
-/* Styles pour les écrans très petits (mobile) */
-@media (max-width: 768px) {
-    .sc-cNQqM {
-        flex-direction: column; /* Empile les divs verticalement */
-        align-items: center; /* Centre les éléments */
-    }
-
-    .sc-fONwsr {
-        width: 100%; /* Assure que les divs prennent toute la largeur de l'écran */
-    }
-
-    .sc-iybRtq {
-        width: 100%; /* Assure que les images prennent toute la largeur de l'écran */
-        text-align: center; /* Centre l'image horizontalement */
-    }
-
-    .mobile-section .sc-iybRtq.itdlji {
-        height: auto !important;
-        padding-bottom: 0 !important;
-    }
-    
-    .mobile-section .sc-iybRtq.itdlji img {
-        width: 100%; /* S'assure que l'image prend la largeur du conteneur */
-        height: auto;
-    }
-}
-
 
 @media only screen and (max-width: 800px) {
     .kLaVss {
@@ -3685,6 +3616,46 @@ ul {
         padding-right: 0;
     }
 }
+
+/* Styles généraux pour les écrans de taille normale et grande */
+.content-container {
+    display: flex; /* Utilisation de flexbox pour une disposition plus facile */
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Centre le texte à l'intérieur des éléments */
+    position: relative; /* Assure que les éléments enfants sont positionnés correctement */
+}
+
+
+
+/* Styles pour les écrans très petits (mobile) */
+@media (max-width: 768px) {
+    .sc-iybRtq {
+        width: 90%; /* Ajuste la largeur pour les petits écrans, si nécessaire */
+    }
+
+    .sc-iybRtq img {
+        width: 100%; /* Assure que l'image prend toute la largeur du conteneur */
+        height: auto; /* Maintient les proportions de l'image */
+    }
+
+    .sc-bdVaJa.jEmNNG {
+        width: 100%; /* Assure que le bouton prend toute la largeur du conteneur */
+        display: flex; /* Utilisation de flexbox pour le bouton */
+        align-items: center;
+        justify-content: center;
+        text-align: center; /* Centre le texte à l'intérieur du bouton */
+    }
+
+    .sc-bwzfXH.eqoTOr {
+        width: auto; /* Ajuste la largeur pour le bouton */
+        height: auto; /* Ajuste la hauteur pour le bouton */
+        display: flex; /* Utilisation de flexbox pour le contenu du bouton */
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 
 
 .itdlji {
