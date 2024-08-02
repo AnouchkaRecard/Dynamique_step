@@ -8056,7 +8056,6 @@ img {
 body {
     overflow-x: hidden; /* Cache tout débordement horizontal */
 }
-
 /* Styles généraux pour les écrans de taille normale et grande */
 .sc-hjRWVT.fsJHfl {
     display: flex; /* Utilisation de flexbox pour une disposition plus facile */
@@ -8092,6 +8091,7 @@ body {
         display: flex; /* Utilisation de flexbox pour centrer le contenu */
         justify-content: center; /* Centre horizontalement le conteneur */
         align-items: center; /* Centre verticalement le conteneur */
+        margin-bottom: 30px; /* Ajoute une marge inférieure plus grande pour l'espace après l'image */
     }
 
     .mobile-section .sc-hjRWVT.fsJHfl {
@@ -8100,5 +8100,3 @@ body {
         justify-content: center; /* Centre horizontalement le contenu */
     }
 }
-
-
