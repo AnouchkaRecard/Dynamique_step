@@ -8030,6 +8030,7 @@ img {
     .mobile-section .sc-iybRtq.itdlji {
         height: auto !important;
         padding-bottom: 110 !important;
+        width : 1000px;
     }
 
     .mobile-section .sc-hjRWVT.fsJHfl {
@@ -8145,9 +8146,25 @@ body {
 
 /* Styles pour les grands écrans (PC) */
 .pc-only {
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    grid-column-start: 4;
+    grid-column-end: 15;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    
+    align-self: center;
+    width: 800px
+}
+
+    
 
 }
 
