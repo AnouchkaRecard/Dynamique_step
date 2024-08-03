@@ -3683,6 +3683,23 @@ ul {
     padding-bottom: 117.65%;
 }
 
+@media only screen and (max-width: 768px) {
+    .itdlji {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768pc) {
+    .itdlji {
+    display: none;
+    position: relative;
+    display: block;
+    height: 0;
+    overflow: visible;
+    padding-bottom: 117.65%;
+    }
+}
+
 .hVNoau {
     position: relative;
     display: block;
@@ -8070,11 +8087,6 @@ body {
 
 }
 
-.sc-iybRtq.itdlji {
-    width: auto; /* Garde la largeur originale de l'image */
-    margin: 0 auto; /* Centre le conteneur de l'image horizontalement */
-    
-}
 
 /* Styles pour les écrans très petits (mobile) */
 @media only screen and (max-width: 800px) {
