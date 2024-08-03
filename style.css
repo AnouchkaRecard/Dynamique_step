@@ -3598,7 +3598,7 @@ ul {
 
 @media only screen and (max-width: 800px) {
     .kLaVss {
-        padding-bottom: 50%; /* Ajuster le ratio d'aspect pour les petits écrans */
+        padding-bottom: 80%; /* Ajuster le ratio d'aspect pour les petits écrans */
     }
 
     .kLaVss img {
@@ -7990,10 +7990,6 @@ img {
         width: 100%; /* Assure que les divs prennent toute la largeur de l'écran */
     }
 
-    .sc-iybRtq {
-        width: 100%; /* Assure que les images prennent toute la largeur de l'écran */
-        
-    }
 
     .sc-cNQqM img {
         width: 100%; /* Assure que les images ne dépassent pas */
@@ -8043,57 +8039,7 @@ img {
     display: none;
 }
 
-/* Afficher la section mobile et masquer la section desktop sur les petits écrans */
-@media only screen and (max-width: 800px) {
-    .desktop-section {
-        display: none;
-    }
-    .mobile-section {
-        display: block;
-    }
 
-    .mobile-section .sc-iiUIRa {
-        padding: 10px;
-    }
-
-    .mobile-section .sc-cNQqM.jAdPBU,
-    .mobile-section .sc-cNQqM.fhyhTt {
-        font-size: 14px;
-        line-height: 1.4;
-        padding: 10px;
-        box-sizing: border-box;
-        word-break: break-word;
-    }
-
-    .mobile-section .sc-iybRtq.itdlji {
-        height: auto !important;
-        padding-bottom: 110 !important;
-    }
-
-    .mobile-section .sc-hjRWVT.fsJHfl {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .mobile-section .sc-iybRtq.itdlji img {
-        width: 100%;
-        height: auto;
-    }
-
-    .mobile-section .button-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .mobile-section .button {
-        width: 90%;
-        margin-bottom: 10px;
-    }
-
-
-}
 
 /* Exemple pour éviter les débordements horizontaux */
 body {
