@@ -5434,13 +5434,15 @@ ul {
     margin-bottom: 0;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) { ICII
     .jAdPBU {
         margin-top:20px;
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 0;
         font-size: 20px; /* Taille du texte pour les écrans plus petits */
+        line-height: 1.6; /* Ajustement de l'interligne pour les petits écrans */
+
 
     }
 }
