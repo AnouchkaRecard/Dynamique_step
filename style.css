@@ -3638,11 +3638,33 @@ ul {
     .sc-iybRtq {
         width: 90%; /* Ajuste la largeur pour les petits écrans, si nécessaire */
     }
+/* Assure que l'image prend toute la largeur de son conteneur */
+.sc-iybRtq img {
+    max-width: 100%; /* Empêche l'image de dépasser la largeur du conteneur */
+    height: auto; /* Conserve les proportions de l'image */
+    display: block; /* Évite les espaces indésirables sous l'image */
+}
 
+/* Styles pour les petits écrans (mobile) */
+@media only screen and (max-width: 576px) {
     .sc-iybRtq img {
-        width: 100%; /* Assure que l'image prend toute la largeur du conteneur */
-        height: auto; /* Maintient les proportions de l'image */
+        width: 100vw; /* L'image prend la largeur totale de l'écran mobile */
     }
+}
+
+/* Styles pour les écrans moyens */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .sc-iybRtq img {
+        width: 80vw; /* L'image prend 80% de la largeur de l'écran */
+    }
+}
+
+/* Styles pour les grands écrans (PC) */
+@media only screen and (min-width: 769px) {
+    .sc-iybRtq img {
+        width: 50vw; /* L'image prend 50% de la largeur de l'écran */
+    }
+}
 
     .sc-bdVaJa.jEmNNG {
         width: 100%; /* Assure que le bouton prend toute la largeur du conteneur */
