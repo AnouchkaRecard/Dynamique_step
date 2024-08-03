@@ -8123,6 +8123,7 @@ body {
     display: none;
 }
 
+
 /* Afficher le contenu uniquement sur les petits écrans (mobiles) */
 @media only screen and (max-width: 768px) {
     .mobile-only {
@@ -8158,9 +8159,11 @@ body {
 
 }
 
+
+
 /* Styles pour les petits écrans (mobiles) */
 @media only screen and (max-width: 800px) {
-    .pc-only {
+    .mobile-only{
         display: none;
         width : 1800px;
     }
