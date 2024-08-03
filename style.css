@@ -2620,14 +2620,18 @@ ul {
 
 @media only screen and (max-width: 800px) {
     .fqYvJU {
-        -webkit-align-self:unset;
-        -ms-flex-item-align: unset;
-        align-self: unset;
-        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         grid-column-start: 1;
-        grid-column-end: 12;
-        padding-left: 0;
-        padding-right: 0;
+        grid-column-end: 13;
+        -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
     }
 }
 
@@ -7990,10 +7994,6 @@ img {
     .sc-cNQqM {
         flex-direction: column; /* Empile les divs verticalement */
         align-items: center; /* Centre les éléments */
-    }
-
-    .sc-fONwsr {
-        width: 100%; /* Assure que les divs prennent toute la largeur de l'écran */
     }
 
 
