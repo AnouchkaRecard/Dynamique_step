@@ -739,6 +739,8 @@ ul {
     font-size: 15px;
     color: rgba(182,188,208,1);
 
+    font-size: 25px; /* Taille du texte pour les écrans plus petits */
+
     
     font-weight: 900;
     font-style: normal;
