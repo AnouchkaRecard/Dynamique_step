@@ -4680,7 +4680,7 @@ ul {
         padding-right: 5px;
         padding-bottom: 5px;
         padding-left: 5px;
-        padding: 15px; /* Augmente le padding pour le bloc orange */
+        padding: 35px; /* Augmente le padding pour le bloc orange */
         background: linear-gradient(90deg, rgba(255, 49, 49, 1) 0%, rgba(255, 145, 77, 1) 100%); /* Maintient le dégradé de fond */
         border-radius: 10px; /* Augmente le rayon des coins pour un look plus arrondi */
     
