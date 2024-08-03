@@ -7704,10 +7704,8 @@ ul, ol {
         margin: 0 auto; /* Centre le conteneur horizontalement */
         padding: 10px; /* Ajoute un peu de padding pour l'aérer */
         /* Taille fixe en pixels */
-p {
-    font-size: 16px;
-}
-    }
+        font-size: 20px; /* Taille du texte pour les écrans plus petits */
+ }
 
     /* Masquer la version PC */
     .desktop-only {
