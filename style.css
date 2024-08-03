@@ -3568,6 +3568,13 @@ ul {
 }
 
 @media only screen and (max-width: 800px) {
+    .fsJHfl {
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+        width: 800px
+    }
+    
 }
 
 .iDwetz {
@@ -8062,6 +8069,7 @@ body {
 .sc-iybRtq.itdlji {
     width: auto; /* Garde la largeur originale de l'image */
     margin: 0 auto; /* Centre le conteneur de l'image horizontalement */
+    
 }
 
 /* Styles pour les écrans très petits (mobile) */
@@ -8081,6 +8089,8 @@ body {
         justify-content: center; /* Centre horizontalement le conteneur */
         align-items: center; /* Centre verticalement le conteneur */
         margin-bottom: 60px; /* Ajoute une marge inférieure plus grande pour l'espace après l'image */
+        font-size: 25px; /* Taille du texte pour les écrans plus petits */
+
     }
 
     .mobile-section .sc-hjRWVT.fsJHfl {
