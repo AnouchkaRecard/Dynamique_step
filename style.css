@@ -3598,7 +3598,7 @@ ul {
 
 @media only screen and (max-width: 800px) {
     .kLaVss {
-        padding-bottom: 80%; /* Ajuster le ratio d'aspect pour les petits écrans */
+        padding-bottom: 50%; /* Ajuster le ratio d'aspect pour les petits écrans */
     }
 
     .kLaVss img {
@@ -5424,9 +5424,17 @@ ul {
 }
 
 #text-10def18c {
-    font-size: 15px; /* Taille du texte */
+    font-size: 15px; /* Taille du texte pour les écrans larges */
     color: rgba(74, 74, 74, 1); /* Couleur du texte */
-    line-height: 1.8; /* Augmente l'interligne pour plus d'espace entre les lignes */
+    line-height: 1.8; /* Hauteur de ligne pour améliorer la lisibilité */
+}
+
+/* Version mobile */
+@media only screen and (max-width: 800px) {
+    #text-10def18c {
+        font-size: 20px; /* Taille du texte pour les écrans plus petits */
+        line-height: 1.6; /* Ajustement de l'interligne pour les petits écrans */
+    }
 }
 
 
@@ -8038,7 +8046,6 @@ img {
 .mobile-section {
     display: none;
 }
-
 
 
 /* Exemple pour éviter les débordements horizontaux */
