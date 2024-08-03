@@ -3365,13 +3365,12 @@ ul {
     display: block;
     max-width: 100%;
     object-fit: contain;
-    width: 509px;
+    width: 1000px; /* matthieu&edgar taille img */
 }
 
 @media only screen and (max-width: 800px) {
+    width: 1000px; /* matthieu&edgar taille img mobile test */
     margin-bottom: 400px; /* Ajoute une marge inférieure plus grande pour l'espace après l'image */
-
-
 }
 
 .hyWwgf {
@@ -3638,33 +3637,11 @@ ul {
     .sc-iybRtq {
         width: 90%; /* Ajuste la largeur pour les petits écrans, si nécessaire */
     }
-/* Assure que l'image prend toute la largeur de son conteneur */
-.sc-iybRtq img {
-    max-width: 100%; /* Empêche l'image de dépasser la largeur du conteneur */
-    height: auto; /* Conserve les proportions de l'image */
-    display: block; /* Évite les espaces indésirables sous l'image */
-}
 
-/* Styles pour les petits écrans (mobile) */
-@media only screen and (max-width: 576px) {
     .sc-iybRtq img {
-        width: 100vw; /* L'image prend la largeur totale de l'écran mobile */
+        width: 100%; /* Assure que l'image prend toute la largeur du conteneur */
+        height: auto; /* Maintient les proportions de l'image */
     }
-}
-
-/* Styles pour les écrans moyens */
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-    .sc-iybRtq img {
-        width: 80vw; /* L'image prend 80% de la largeur de l'écran */
-    }
-}
-
-/* Styles pour les grands écrans (PC) */
-@media only screen and (min-width: 769px) {
-    .sc-iybRtq img {
-        width: 50vw; /* L'image prend 50% de la largeur de l'écran */
-    }
-}
 
     .sc-bdVaJa.jEmNNG {
         width: 100%; /* Assure que le bouton prend toute la largeur du conteneur */
@@ -3675,7 +3652,7 @@ ul {
     }
 
     .sc-bwzfXH.eqoTOr {
-        width: auto; /* Ajuste la largeur pour le bouton */
+        width: 100px; /* Ajuste la largeur pour le bouton */
         height: auto; /* Ajuste la hauteur pour le bouton */
         display: flex; /* Utilisation de flexbox pour le contenu du bouton */
         align-items: center;
@@ -5436,11 +5413,22 @@ ul {
 
 .fhyhTt {
     position: relative;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
+    max-width: 600px; /* Ajustez cette valeur selon vos besoins */
+    margin: 0 auto; /* Centre le conteneur horizontalement */
+    padding: 10px; /* Ajoute un peu de padding pour l'aérer */
+
 }
+
+#text-10def18c {
+    font-size: 15px; /* Taille du texte */
+    color: rgba(74, 74, 74, 1); /* Couleur du texte */
+    line-height: 1.8; /* Augmente l'interligne pour plus d'espace entre les lignes */
+}
+
 
 @media only screen and (max-width: 800px) {
     .fhyhTt {
@@ -7607,6 +7595,8 @@ text-decoration: none;
     font-family: 'type_juice_-_joyride_std_outline-webfont', sans-serif;
 
 }
+
+
 .button {
     display: inline-block;
     margin: 0; /* Annuler les marges par défaut */
@@ -7686,9 +7676,10 @@ ul, ol {
     margin-left: 0; /* Réinitialisation de la marge gauche */
     margin-right: 0; /* Réinitialisation de la marge droite */
     margin-bottom: 10px; /* Marge inférieure pour espacement entre les éléments */
-    line-height: 1.6; /* Hauteur de ligne pour améliorer la lisibilité */
+    line-height: 1.5; /* Hauteur de ligne pour améliorer la lisibilité */
     display: flex; /* Utilisation de flexbox pour aligner les éléments */
     align-items: center; /* Centrer les éléments verticalement */
+
 }
 
 /* Style pour l'icône */
@@ -7975,7 +7966,7 @@ img {
     }
 
     .sc-iybRtq {
-        width: 70%; /* Assure que les images prennent toute la largeur de l'écran */
+        width: 100%; /* Assure que les images prennent toute la largeur de l'écran */
         
     }
 
@@ -8052,7 +8043,6 @@ img {
     .mobile-section .sc-iybRtq.itdlji {
         height: auto !important;
         padding-bottom: 110 !important;
-        width : 1000px;
     }
 
     .mobile-section .sc-hjRWVT.fsJHfl {
@@ -8096,11 +8086,6 @@ body {
 .sc-iybRtq.itdlji {
     width: auto; /* Garde la largeur originale de l'image */
     margin: 0 auto; /* Centre le conteneur de l'image horizontalement */
-}
-
-.sc-iybRtq.itdlji img {
-    width: 100%; /* Assure que l'image s'adapte à la largeur du conteneur */
-    height: auto; /* Maintient les proportions de l'image */
 }
 
 /* Styles pour les écrans très petits (mobile) */
