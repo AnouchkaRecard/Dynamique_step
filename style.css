@@ -3572,7 +3572,9 @@ ul {
         -webkit-align-self: center;
         -ms-flex-item-align: center;
         align-self: center;
-        width: 800px
+        width: 800px ;
+        font-size: 25px; /* Taille du texte pour les écrans plus petits */
+
     }
     
 }
@@ -8064,6 +8066,8 @@ body {
     align-items: center; /* Centre le contenu verticalement */
     width: 60%; /* Assure que le conteneur prend toute la largeur disponible */
     height: auto; /* Ajuste la hauteur en fonction du contenu */
+    font-size: 25px; /* Taille du texte pour les écrans plus petits */
+
 }
 
 .sc-iybRtq.itdlji {
@@ -8097,6 +8101,8 @@ body {
         width: 100%; /* Assure que le conteneur prend toute la largeur disponible */
         display: flex; /* Utilisation de flexbox pour centrer le contenu */
         justify-content: center; /* Centre horizontalement le contenu */
+        font-size: 25px; /* Taille du texte pour les écrans plus petits */
+
     }
 }
 
