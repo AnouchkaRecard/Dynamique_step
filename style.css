@@ -7681,6 +7681,31 @@ ul, ol {
     align-items: center; /* Centrer les éléments verticalement */
 
 }
+@media only screen and (max-width: 800px) {
+    .mobile-only {
+        /* Ajouter vos styles pour la version mobile ici */
+        text-align: justify;
+        color: rgba(29, 29, 29, 1); /* Couleur du texte */
+        margin-left: 0; /* Réinitialisation de la marge gauche */
+        margin-right: 0; /* Réinitialisation de la marge droite */
+        margin-bottom: 10px; /* Marge inférieure pour espacement entre les éléments */
+        line-height: 1.8; /* Hauteur de ligne pour améliorer la lisibilité sur mobile */
+        display: flex; /* Utilisation de flexbox pour aligner les éléments */
+        align-items: center; /* Centrer les éléments verticalement */
+        max-width: 100%; /* Ajustez cette valeur selon vos besoins */
+        margin: 0 auto; /* Centre le conteneur horizontalement */
+        padding: 10px; /* Ajoute un peu de padding pour l'aérer */
+        /* Taille fixe en pixels */
+p {
+    font-size: 16px;
+}
+    }
+
+    /* Masquer la version PC */
+    .desktop-only {
+        display: none;
+    }
+}
 
 /* Style pour l'icône */
 .list-icon {
@@ -8171,9 +8196,6 @@ body {
     width: 800px
 }
 
-    
-
-}
 
 .pc-only img {
     width: 800px;
