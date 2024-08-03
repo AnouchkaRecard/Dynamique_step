@@ -772,8 +772,9 @@ ul {
         padding-bottom: 0px;
         padding-left: 0px;
         font-size: 11px;
-        line-height: 16px;
-        font-size: 30px; /* Taille du texte pour les écrans plus petits */
+        line-height: 32px;
+        font-size: 25px; /* Taille du texte pour les écrans plus petits */
+        
 
     }
 }
@@ -7277,8 +7278,8 @@ ul {
 
 @media only screen and (max-width: 800px) {
     .aXoOu {
-        font-size:16px;
         font-size: 16px;
+        font-size: 25px;
         margin-top: 0px;
         text-align: left;
         line-height: 26px;
