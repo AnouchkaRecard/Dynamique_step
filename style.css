@@ -1748,7 +1748,7 @@ ul {
     }
 
     .exUXdi h1,.exUXdi h2,.exUXdi h3,.exUXdi h4,.exUXdi h5,.exUXdi h6 {
-        font-size: 30px;
+        font-size: 30px;  /* titre offres personnalisées, challenge du moment, a propos */
         
         -webkit-letter-spacing: -1px;
         -moz-letter-spacing: -1px;
@@ -2879,6 +2879,10 @@ ul {
         grid-column-end: 12;
         padding-left: 0;
         padding-right: 0;
+        max-width: none; /* Évite de limiter la largeur de l'image à celle du conteneur */
+        width: 120%; /* Augmente la taille de l'image au-delà de la largeur du conteneur */ /*matthieu&edgar test */
+
+
     }
 }
 
